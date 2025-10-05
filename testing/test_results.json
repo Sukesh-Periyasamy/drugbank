@@ -1,0 +1,92 @@
+{
+  "timestamp": "2025-10-06T04:40:53.152373",
+  "summary": {
+    "total_tests": 7,
+    "successful": 7,
+    "failed": 0,
+    "success_rate": 100.0
+  },
+  "detailed_results": [
+    {
+      "test_name": "Simple/Low-risk",
+      "patient_id": "T001_SIMPLE",
+      "success": true,
+      "output": "Loading patient data...\nRefining query using local rules...\nRefined query: Allergies:  | Demographics: Sex: Female, Weight: 65kg, Age: 35\nLoading PubMedBERT model...\nConnecting to ChromaDB...\nConnected to collection with 35991 records\nAnalyzing 1 medications: ['Ibuprofen']\n\n=== DYNAMIC SECTION SELECTION ===\nQuerying 2 sections for Ibuprofen: ['names', 'pharmacology']\n\nSaving results to patient_drug_data.json...\n\n=== ANALYSIS COMPLETE ===\nPatient ID: T001_SIMPLE\nMedications analyzed: 1\nTotal sections queried: 2 (vs 7 standard)\nEfficiency gain: 71.4% fewer queries\n- Ibuprofen: 2 sections, 6 matches\nTotal matches found: 6\nResults saved to 'patient_drug_data.json'\n",
+      "error": "",
+      "analysis_data": {
+        "medications_count": 1,
+        "sections_queried": 2,
+        "efficiency_gain": "71.4% fewer queries",
+        "total_matches": 6
+      }
+    },
+    {
+      "test_name": "Polypharmacy (Medium)",
+      "patient_id": "T002_POLY",
+      "success": true,
+      "output": "Loading patient data...\nRefining query using local rules...\nRefined query: Allergies:  | Demographics: Sex: Male, Weight: 80kg, Age: 55\nLoading PubMedBERT model...\nConnecting to ChromaDB...\nConnected to collection with 35991 records\nAnalyzing 3 medications: ['Lisinopril', 'Metformin', 'Atorvastatin']\n\n=== DYNAMIC SECTION SELECTION ===\nQuerying 4 sections for Lisinopril: ['names', 'pharmacology', 'indications', 'interactions']\nQuerying 4 sections for Metformin: ['names', 'pharmacology', 'indications', 'interactions']\nQuerying 4 sections for Atorvastatin: ['names', 'pharmacology', 'indications', 'interactions']\n\nSaving results to patient_drug_data.json...\n\n=== ANALYSIS COMPLETE ===\nPatient ID: T002_POLY\nMedications analyzed: 3\nTotal sections queried: 12 (vs 21 standard)\nEfficiency gain: 42.9% fewer queries\n- Lisinopril: 4 sections, 12 matches\n- Metformin: 4 sections, 12 matches\n- Atorvastatin: 4 sections, 12 matches\nTotal matches found: 36\nResults saved to 'patient_drug_data.json'\n",
+      "error": "",
+      "analysis_data": {
+        "medications_count": 3,
+        "sections_queried": 12,
+        "efficiency_gain": "42.9% fewer queries",
+        "total_matches": 36
+      }
+    },
+    {
+      "test_name": "High-risk (Edge)",
+      "patient_id": "T003_HIGHRISK",
+      "success": true,
+      "output": "Loading patient data...\nRefining query using local rules...\nRefined query: Allergies: Penicillin, Sulfa drugs | Demographics: Sex: Female, Weight: 52kg, Age: 78\nLoading PubMedBERT model...\nConnecting to ChromaDB...\nConnected to collection with 35991 records\nAnalyzing 3 medications: ['Warfarin', 'Furosemide', 'Digoxin']\n\n=== DYNAMIC SECTION SELECTION ===\nQuerying 7 sections for Warfarin: ['interactions', 'names', 'pharmacology', 'toxicity', 'indications', 'dosage', 'metabolism']\nQuerying 7 sections for Furosemide: ['interactions', 'names', 'pharmacology', 'toxicity', 'indications', 'dosage', 'metabolism']\nQuerying 7 sections for Digoxin: ['interactions', 'names', 'pharmacology', 'toxicity', 'indications', 'dosage', 'metabolism']\n\nSaving results to patient_drug_data.json...\n\n=== ANALYSIS COMPLETE ===\nPatient ID: T003_HIGHRISK\nMedications analyzed: 3\nTotal sections queried: 21 (vs 21 standard)\nEfficiency gain: 0.0% fewer queries\n- Warfarin: 7 sections, 18 matches\n- Furosemide: 7 sections, 18 matches\n- Digoxin: 7 sections, 18 matches\nTotal matches found: 54\nResults saved to 'patient_drug_data.json'\n",
+      "error": "",
+      "analysis_data": {
+        "medications_count": 3,
+        "sections_queried": 21,
+        "efficiency_gain": "0.0% fewer queries",
+        "total_matches": 54
+      }
+    },
+    {
+      "test_name": "No Medications",
+      "patient_id": "T004A_NOMEDS",
+      "success": true,
+      "output": "Loading patient data...\nRefining query using local rules...\nRefined query: Allergies:  | Demographics: Age: 25\nLoading PubMedBERT model...\nConnecting to ChromaDB...\nConnected to collection with 35991 records\nNo medications found in patient data\n",
+      "error": "",
+      "analysis_data": {}
+    },
+    {
+      "test_name": "Malformed Data",
+      "patient_id": "Unknown",
+      "success": true,
+      "output": "Loading patient data...\nRefining query using local rules...\nRefined query: \nLoading PubMedBERT model...\nConnecting to ChromaDB...\nConnected to collection with 35991 records\nNo medications found in patient data\n",
+      "error": "",
+      "analysis_data": {}
+    },
+    {
+      "test_name": "Fake Drugs",
+      "patient_id": "T005_FAKE",
+      "success": true,
+      "output": "Loading patient data...\nRefining query using local rules...\nRefined query: Allergies: Reality, Logic | Demographics: Age: 42\nLoading PubMedBERT model...\nConnecting to ChromaDB...\nConnected to collection with 35991 records\nAnalyzing 3 medications: ['FakeDrugAlpha123', 'FantasyMedicine', 'NonExistentCompound']\n\n=== DYNAMIC SECTION SELECTION ===\nQuerying 4 sections for FakeDrugAlpha123: ['interactions', 'pharmacology', 'indications', 'names']\nQuerying 4 sections for FantasyMedicine: ['interactions', 'pharmacology', 'indications', 'names']\nQuerying 4 sections for NonExistentCompound: ['interactions', 'pharmacology', 'indications', 'names']\n\nSaving results to patient_drug_data.json...\n\n=== ANALYSIS COMPLETE ===\nPatient ID: T005_FAKE\nMedications analyzed: 3\nTotal sections queried: 12 (vs 21 standard)\nEfficiency gain: 42.9% fewer queries\n- FakeDrugAlpha123: 4 sections, 12 matches\n- FantasyMedicine: 4 sections, 12 matches\n- NonExistentCompound: 4 sections, 12 matches\nTotal matches found: 36\nResults saved to 'patient_drug_data.json'\n",
+      "error": "",
+      "analysis_data": {
+        "medications_count": 3,
+        "sections_queried": 12,
+        "efficiency_gain": "42.9% fewer queries",
+        "total_matches": 36
+      }
+    },
+    {
+      "test_name": "Unit Variants",
+      "patient_id": "T006_UNITS",
+      "success": true,
+      "output": "Loading patient data...\nRefining query using local rules...\nRefined query: Allergies:  | Demographics: Weight: 70kg, Age: 60\nLoading PubMedBERT model...\nConnecting to ChromaDB...\nConnected to collection with 35991 records\nAnalyzing 1 medications: ['Insulin']\n\n=== DYNAMIC SECTION SELECTION ===\nQuerying 6 sections for Insulin: ['dosage', 'indications', 'names', 'toxicity', 'metabolism', 'pharmacology']\n\nSaving results to patient_drug_data.json...\n\n=== ANALYSIS COMPLETE ===\nPatient ID: T006_UNITS\nMedications analyzed: 1\nTotal sections queried: 6 (vs 7 standard)\nEfficiency gain: 14.3% fewer queries\n- Insulin: 6 sections, 15 matches\nTotal matches found: 15\nResults saved to 'patient_drug_data.json'\n",
+      "error": "",
+      "analysis_data": {
+        "medications_count": 1,
+        "sections_queried": 6,
+        "efficiency_gain": "14.3% fewer queries",
+        "total_matches": 15
+      }
+    }
+  ]
+}

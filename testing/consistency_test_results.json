@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-10-06T04:58:40.061482",
+  "tests_passed": 5,
+  "tests_failed": 0,
+  "consistency_issues": [],
+  "detailed_results": [
+    {
+      "test_name": "Simple Patient",
+      "patient_id": "CONS_001",
+      "success": true,
+      "issues": [],
+      "metrics": {
+        "parser_medications": 1,
+        "query_medications": 1,
+        "analyzer_medications": 1,
+        "parser_conditions": 1,
+        "query_conditions": 1,
+        "parser_allergies": 1,
+        "query_allergies": 1,
+        "total_sections_selected": 3
+      }
+    },
+    {
+      "test_name": "Complex Patient",
+      "patient_id": "CONS_002",
+      "success": true,
+      "issues": [],
+      "metrics": {
+        "parser_medications": 3,
+        "query_medications": 3,
+        "analyzer_medications": 3,
+        "parser_conditions": 3,
+        "query_conditions": 3,
+        "parser_allergies": 2,
+        "query_allergies": 2,
+        "total_sections_selected": 21
+      }
+    },
+    {
+      "test_name": "Mixed Field Names",
+      "patient_id": "CONS_003",
+      "success": true,
+      "issues": [],
+      "metrics": {
+        "parser_medications": 1,
+        "query_medications": 1,
+        "analyzer_medications": 1,
+        "parser_conditions": 1,
+        "query_conditions": 1,
+        "parser_allergies": 0,
+        "query_allergies": 0,
+        "total_sections_selected": 3
+      }
+    },
+    {
+      "test_name": "Empty Data",
+      "patient_id": "CONS_004",
+      "success": true,
+      "issues": [],
+      "metrics": {
+        "parser_medications": 0,
+        "query_medications": 0,
+        "analyzer_medications": 0,
+        "parser_conditions": 0,
+        "query_conditions": 0,
+        "parser_allergies": 0,
+        "query_allergies": 0,
+        "total_sections_selected": 0
+      }
+    },
+    {
+      "test_name": "Inconsistent Structure",
+      "patient_id": "CONS_005",
+      "success": true,
+      "issues": [],
+      "metrics": {
+        "parser_medications": 2,
+        "query_medications": 2,
+        "analyzer_medications": 2,
+        "parser_conditions": 1,
+        "query_conditions": 1,
+        "parser_allergies": 1,
+        "query_allergies": 1,
+        "total_sections_selected": 8
+      }
+    }
+  ],
+  "total_tests": 5,
+  "success_rate": 100.0
+}
