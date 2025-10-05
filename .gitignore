@@ -1,6 +1,5 @@
 # Large files
 drugbank.json
-chroma_db/
 *.db
 *.sqlite3
 
