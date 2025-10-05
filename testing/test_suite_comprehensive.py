@@ -1,9 +1,4 @@
-# DrugBank Clinical RAG System - Test             result = subprocess.run(
-                ["python", "../patient_drug_analysis.py"],
-                capture_output=True,
-                text=True,
-                timeout=120
-            )
+# DrugBank Clinical RAG System - Comprehensive Test Suite
 # Comprehensive validation across different patient scenarios
 
 import json
