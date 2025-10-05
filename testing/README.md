@@ -48,6 +48,51 @@ cd testing
 python consistency_check.py
 ```
 
+#### `clinical_reasoning_tests.py`
+**Purpose:** AI reasoning consistency validation across clinical thresholds
+- Tests clinical decision-making consistency when inputs vary slightly
+- Validates medical threshold behavior (age 65, eGFR 60, etc.)
+- Ensures appropriate clinical reasoning triggers
+- Tests combined parameter threshold interactions
+
+**Key Thresholds Tested:**
+- Age 64 vs 65 (elderly classification)
+- eGFR 61 vs 59 mL/min/1.73m² (renal impairment)
+- Creatinine, HbA1c, weight thresholds
+- Combined risk factor scenarios
+
+**Usage:**
+```bash
+cd testing
+python clinical_reasoning_tests.py
+```
+
+#### `threshold_validation.py`
+**Purpose:** Detailed clinical threshold behavior validation
+- Precision testing of medical decision boundaries
+- Validates expected vs actual threshold crossing behavior
+- Tests both individual and combined threshold effects
+- Includes no-change validation for stable scenarios
+
+**Usage:**
+```bash
+cd testing
+python threshold_validation.py
+```
+
+#### `comprehensive_reasoning_tests.py`
+**Purpose:** Master test suite for all reasoning consistency tests
+- Combines clinical reasoning and threshold validation
+- Provides comprehensive accuracy metrics and clinical assessment
+- Production readiness evaluation
+- Overall system validation for clinical decision support
+
+**Usage:**
+```bash
+cd testing
+python comprehensive_reasoning_tests.py
+```
+
 ## Test Results
 
 ### 📊 Result Files
@@ -55,6 +100,10 @@ python consistency_check.py
 - `test_results.json` - Comprehensive test suite results
 - `fuzz_test_results.json` - Error injection test results  
 - `consistency_test_results.json` - Cross-module consistency results
+- `clinical_reasoning_test_results.json` - AI reasoning consistency results
+- `threshold_validation_results.json` - Clinical threshold validation results
+- `comprehensive_reasoning_test_results.json` - Complete reasoning test summary
+- `threshold_diagnostic_results.json` - Diagnostic analysis of threshold behavior
 
 ### 🎯 Expected Outcomes
 
