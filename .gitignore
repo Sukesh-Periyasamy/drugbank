@@ -1,4 +1,4 @@
-﻿# Large files
+# Large files
 drugbank.json
 chroma_db/
 *.db
@@ -11,7 +11,6 @@ __pycache__/
 venv/
 
 # Output files
-patient_drug_data.json
 
 # OS
 .DS_Store
