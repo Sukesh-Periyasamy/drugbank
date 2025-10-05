@@ -1,0 +1,62 @@
+{
+  "patient_id": "P20251007",
+  "name": "Ravi Iyer",
+  "age": 65,
+  "sex": "Male",
+  "weight_kg": 76,
+  "height_cm": 170,
+  "clinical_conditions": [
+    "Chronic Liver Disease",
+    "Type 2 Diabetes Mellitus",
+    "Hypertension",
+    "Hyperlipidemia",
+    "Atrial Fibrillation"
+  ],
+  "current_medications": [
+    {
+      "drug_name": "Metformin",
+      "dose": "500 mg",
+      "frequency": "twice daily"
+    },
+    {
+      "drug_name": "Warfarin",
+      "dose": "5 mg",
+      "frequency": "once daily"
+    },
+    {
+      "drug_name": "Atorvastatin",
+      "dose": "20 mg",
+      "frequency": "once daily at night"
+    },
+    {
+      "drug_name": "Amlodipine",
+      "dose": "5 mg",
+      "frequency": "once daily"
+    }
+  ],
+  "lab_results": {
+    "ALT": "85 U/L",
+    "AST": "78 U/L",
+    "Bilirubin": "2.1 mg/dL",
+    "INR": "2.5",
+    "Creatinine": "1.3 mg/dL",
+    "eGFR": "60 mL/min/1.73m2",
+    "HbA1c": "7.9%",
+    "Blood_Pressure": "140/90 mmHg"
+  },
+  "allergies": [
+    "Penicillin"
+  ],
+  "recent_symptoms": [
+    "Fatigue",
+    "Mild jaundice",
+    "Easy bruising"
+  ],
+  "lifestyle": {
+    "smoking": "Former smoker (quit 5 years ago)",
+    "alcohol": "Occasional (1–2 drinks/week)",
+    "diet": "Low-carb, moderate fat",
+    "exercise": "Walks 3 times per week"
+  },
+  "notes": "Patient has elevated liver enzymes and INR due to chronic liver disease. Requires monitoring for drug-induced hepatotoxicity and anticoagulant interactions."
+}
