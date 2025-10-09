@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-10-09T05:41:29.387412",
+  "deployment_readiness": "BLOCKED - CRITICAL TEST FAILURES",
+  "overall_summary": {
+    "total_suites": 9,
+    "successful_suites": 0,
+    "failed_suites": 9,
+    "success_rate": 0.0,
+    "critical_suites": 8,
+    "critical_passed": 0,
+    "critical_success_rate": 0.0,
+    "total_duration_minutes": 1.8520332333333334,
+    "execution_timestamp": "2025-10-09T05:43:20.510323"
+  },
+  "critical_findings": [
+    "CRITICAL FAILURE: Comprehensive Test Suite failed - Traceback (most recent call last):\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\test_suite_comprehensive.py\", line 399, in <module>\n    tester.run_all_tests()\n    ~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\test_suite_comprehensive.py\", line 91, in run_all_tests\n    print(\"\\U0001f9ea Starting DrugBank Clinical RAG System Test Suite\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sukes\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f9ea' in position 0: character maps to <undefined>\n",
+    "CRITICAL FAILURE: Fuzz Test Suite failed - Traceback (most recent call last):\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\fuzz_test_suite.py\", line 393, in <module>\n    fuzzer.run_fuzz_tests()\n    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\fuzz_test_suite.py\", line 291, in run_fuzz_tests\n    print(\"\\U0001f9ea Starting Error Injection & Fuzz Testing Suite...\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sukes\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f9ea' in position 0: character maps to <undefined>\n",
+    "CRITICAL FAILURE: Consistency Check Suite failed - Traceback (most recent call last):\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\consistency_check.py\", line 674, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\consistency_check.py\", line 668, in main\n    success = tester.run_comprehensive_tests()\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\consistency_check.py\", line 522, in run_comprehensive_tests\n    print(\"\\U0001f50d Starting Cross-Module Consistency Tests...\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sukes\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f50d' in position 0: character maps to <undefined>\n",
+    "CRITICAL FAILURE: Clinical Reasoning Tests failed - Traceback (most recent call last):\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\clinical_reasoning_tests.py\", line 445, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\clinical_reasoning_tests.py\", line 439, in main\n    success = tester.run_threshold_tests()\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\clinical_reasoning_tests.py\", line 389, in run_threshold_tests\n    print(\"\\U0001f9e0 Starting AI Reasoning Consistency Tests...\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sukes\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>\n",
+    "CRITICAL FAILURE: Threshold Validation Tests failed - Traceback (most recent call last):\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\threshold_validation.py\", line 510, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\threshold_validation.py\", line 505, in main\n    success = validator.run_all_validations()\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\threshold_validation.py\", line 455, in run_all_validations\n    print(\"\\U0001f3af Starting Clinical Threshold Validation Tests...\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sukes\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f3af' in position 0: character maps to <undefined>\n",
+    "CRITICAL FAILURE: Comprehensive Reasoning Tests failed - Traceback (most recent call last):\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\comprehensive_reasoning_tests.py\", line 189, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\comprehensive_reasoning_tests.py\", line 183, in main\n    success = test_suite.run_all_reasoning_tests()\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\comprehensive_reasoning_tests.py\", line 45, in run_all_reasoning_tests\n    print(\"\\U0001f9e0 COMPREHENSIVE AI REASONING CONSISTENCY TEST SUITE\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sukes\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>\n",
+    "CRITICAL FAILURE: Schema Validation Tests failed - Traceback (most recent call last):\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\schema_validation_test.py\", line 487, in <module>\n    success = main()\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\schema_validation_test.py\", line 480, in main\n    validator = SchemaValidator(schema_file)\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\schema_validation_test.py\", line 38, in __init__\n    self.schema = self.load_schema()\n                  ~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\schema_validation_test.py\", line 55, in load_schema\n    print(f\"\\u2705 Loaded schema from {self.schema_file}\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sukes\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\u2705' in position 0: character maps to <undefined>\n",
+    "CRITICAL FAILURE: Bias & Fairness Evaluation failed - Traceback (most recent call last):\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\bias_fairness_evaluation.py\", line 829, in <module>\n    success = main()\n  File \"C:\\Users\\sukes\\Downloads\\json drugbank\\testing\\bias_fairness_evaluation.py\", line 816, in main\n    print(\"\\U0001f50d DrugBank Clinical RAG System - Bias & Fairness Evaluation\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sukes\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f50d' in position 0: character maps to <undefined>\n"
+  ],
+  "top_recommendations": [
+    {
+      "priority": "CRITICAL",
+      "category": "Bias Mitigation",
+      "action": "Implement immediate bias mitigation for condition frequency discrimination",
+      "timeline": "1 week",
+      "impact": "Prevents unethical treatment disparities"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Age Bias",
+      "action": "Normalize age-based section selection algorithm",
+      "timeline": "2 weeks",
+      "impact": "Reduces over-analysis of elderly patients"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Clinical Accuracy",
+      "action": "Review and fix clinical reasoning issues in: Clinical Reasoning Tests, Threshold Validation Tests, Comprehensive Reasoning Tests",
+      "timeline": "1 week",
+      "impact": "Ensures safe clinical decision support"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "fairness_report": {
+    "fairness_metrics": {
+      "average_bias_score": 1.3518518518518519,
+      "max_bias_score": 2.2222222222222223,
+      "min_bias_score": 0.8333333333333334,
+      "fairness_pass_rate": 66.66666666666666,
+      "total_alerts": 1,
+      "mitigation_actions": 1
+    },
+    "demographic_analysis": {
+      "young_Male_common": {
+        "average_bias": 1.0,
+        "sample_size": 1,
+        "fairness_rate": 100.0
+      },
+      "elderly_Female_rare": {
+        "average_bias": 2.2222222222222223,
+        "sample_size": 1,
+        "fairness_rate": 0.0
+      },
+      "middle_aged_Other_common": {
+        "average_bias": 0.8333333333333334,
+        "sample_size": 1,
+        "fairness_rate": 100.0
+      }
+    },
+    "recent_alerts": [
+      {
+        "timestamp": "2025-10-09T05:51:05.010614",
+        "patient_id": "FAIR_002",
+        "bias_score": 2.2222222222222223,
+        "threshold": 1.1,
+        "demographics": {
+          "age": 75,
+          "age_group": "elderly",
+          "gender": "Female",
+          "condition": "Myasthenia Gravis",
+          "condition_frequency": "rare"
+        },
+        "severity": "HIGH"
+      }
+    ],
+    "mitigation_summary": {
+      "total_mitigations": 1,
+      "by_type": {
+        "statistical_parity": 1
+      },
+      "recent_actions": [
+        {
+          "timestamp": "2025-10-09T05:51:05.010565",
+          "bias_type": "statistical_parity",
+          "demographic": "age_elderly",
+          "action": "Reduced complexity from 20 to 20"
+        }
+      ]
+    },
+    "recommendations": [
+      "Increase bias monitoring frequency - fairness pass rate below 80%"
+    ]
+  },
+  "bias_alerts": [
+    {
+      "timestamp": "2025-10-09T05:51:05.010614",
+      "patient_id": "FAIR_002",
+      "bias_score": 2.2222222222222223,
+      "threshold": 1.1,
+      "demographics": {
+        "age": 75,
+        "age_group": "elderly",
+        "gender": "Female",
+        "condition": "Myasthenia Gravis",
+        "condition_frequency": "rare"
+      },
+      "severity": "HIGH"
+    }
+  ],
+  "mitigation_log": [
+    {
+      "timestamp": "2025-10-09T05:51:05.010565",
+      "bias_type": "statistical_parity",
+      "demographic": "age_elderly",
+      "action": "Reduced complexity from 20 to 20"
+    }
+  ]
+}

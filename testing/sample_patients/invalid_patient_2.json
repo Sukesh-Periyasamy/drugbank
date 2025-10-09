@@ -1,0 +1,8 @@
+{
+  "patient_id": "PAT_ERR_002",
+  "name": "Wrong Types Patient",
+  "age": "thirty-five",
+  "sex": "Male",
+  "weight_kg": "65 kg",
+  "current_medications": "Aspirin"
+}

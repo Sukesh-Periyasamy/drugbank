@@ -1,0 +1,22 @@
+{
+  "patient_id": "PAT_002",
+  "name": "Maria Garcia",
+  "age": 34,
+  "sex": "Female",
+  "weight_kg": 65.2,
+  "current_medications": [
+    {
+      "drug_name": "Metformin",
+      "dose": "500 mg",
+      "frequency": "twice daily"
+    }
+  ],
+  "clinical_conditions": [
+    "Type 2 Diabetes"
+  ],
+  "allergies": [],
+  "lab_results": {
+    "HbA1c": "7.2%",
+    "Glucose": "140 mg/dL"
+  }
+}

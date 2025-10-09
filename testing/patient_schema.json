@@ -1,0 +1,293 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://drugbank-clinical-rag.com/patient-schema.json",
+  "title": "DrugBank Clinical RAG Patient Schema",
+  "description": "Schema for validating patient data in the DrugBank Clinical RAG System",
+  "type": "object",
+  "required": ["patient_id", "name", "age", "sex", "current_medications"],
+  "additionalProperties": true,
+  "properties": {
+    "patient_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$",
+      "minLength": 1,
+      "maxLength": 50,
+      "description": "Unique patient identifier"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "description": "Patient full name"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 150,
+      "description": "Patient age in years"
+    },
+    "sex": {
+      "type": "string",
+      "enum": ["Male", "Female", "Other", "Unknown"],
+      "description": "Patient biological sex"
+    },
+    "weight_kg": {
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 1000,
+      "description": "Patient weight in kilograms"
+    },
+    "height_cm": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 300,
+      "description": "Patient height in centimeters"
+    },
+    "current_medications": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 50,
+      "description": "List of current medications",
+      "items": {
+        "type": "object",
+        "required": ["drug_name"],
+        "additionalProperties": true,
+        "properties": {
+          "drug_name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "description": "Name of the medication"
+          },
+          "dose": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "Medication dosage (e.g., '500 mg', '10 units')"
+          },
+          "frequency": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "Dosing frequency (e.g., 'twice daily', 'as needed')"
+          },
+          "route": {
+            "type": "string",
+            "enum": ["oral", "IV", "IM", "SC", "topical", "inhalation", "rectal", "other"],
+            "description": "Route of administration"
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Medication start date (YYYY-MM-DD)"
+          }
+        }
+      }
+    },
+    "medications": {
+      "type": "array",
+      "description": "Alternative field name for current_medications",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          {
+            "type": "object",
+            "required": ["drugName"],
+            "properties": {
+              "drugName": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "dose": {
+                "type": "string",
+                "maxLength": 100
+              }
+            }
+          }
+        ]
+      }
+    },
+    "clinical_conditions": {
+      "type": "array",
+      "maxItems": 30,
+      "description": "List of clinical conditions/diagnoses",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "description": "Alternative field name for clinical_conditions",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "allergies": {
+      "type": "array",
+      "maxItems": 20,
+      "description": "List of known allergies",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      }
+    },
+    "allergic_to": {
+      "type": "array",
+      "description": "Alternative field name for allergies",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      }
+    },
+    "lab_results": {
+      "type": "object",
+      "description": "Laboratory test results",
+      "additionalProperties": true,
+      "properties": {
+        "Creatinine": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.?[0-9]*\\s*(mg/dL|µmol/L|umol/L)$",
+          "description": "Serum creatinine level"
+        },
+        "eGFR": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.?[0-9]*\\s*(mL/min/1\\.73m2|mL/min/1\\.73m²|ml/min)$",
+          "description": "Estimated glomerular filtration rate"
+        },
+        "HbA1c": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.?[0-9]*\\s*(%|mmol/mol)$",
+          "description": "Hemoglobin A1c level"
+        },
+        "ALT": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.?[0-9]*\\s*(U/L|IU/L)$",
+          "description": "Alanine aminotransferase"
+        },
+        "AST": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.?[0-9]*\\s*(U/L|IU/L)$",
+          "description": "Aspartate aminotransferase"
+        },
+        "INR": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.?[0-9]*$",
+          "description": "International normalized ratio"
+        }
+      }
+    },
+    "labs": {
+      "type": "object",
+      "description": "Alternative field name for lab_results",
+      "additionalProperties": true
+    },
+    "vital_signs": {
+      "type": "object",
+      "description": "Patient vital signs",
+      "properties": {
+        "blood_pressure_systolic": {
+          "type": "integer",
+          "minimum": 50,
+          "maximum": 300,
+          "description": "Systolic blood pressure in mmHg"
+        },
+        "blood_pressure_diastolic": {
+          "type": "integer",
+          "minimum": 30,
+          "maximum": 200,
+          "description": "Diastolic blood pressure in mmHg"
+        },
+        "heart_rate": {
+          "type": "integer",
+          "minimum": 20,
+          "maximum": 300,
+          "description": "Heart rate in beats per minute"
+        },
+        "temperature": {
+          "type": "number",
+          "minimum": 25.0,
+          "maximum": 50.0,
+          "description": "Body temperature in Celsius"
+        },
+        "respiratory_rate": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 60,
+          "description": "Respiratory rate per minute"
+        },
+        "oxygen_saturation": {
+          "type": "integer",
+          "minimum": 50,
+          "maximum": 100,
+          "description": "Oxygen saturation percentage"
+        }
+      }
+    },
+    "medical_history": {
+      "type": "array",
+      "description": "Past medical history",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "year_diagnosed": {
+            "type": "integer",
+            "minimum": 1900,
+            "maximum": 2100
+          },
+          "resolved": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "emergency_contact": {
+      "type": "object",
+      "description": "Emergency contact information",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "relationship": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "phone": {
+          "type": "string",
+          "pattern": "^[+]?[0-9\\s\\-\\(\\)]+$",
+          "maxLength": 20
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Additional clinical notes"
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Record creation timestamp"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update timestamp"
+    }
+  }
+}

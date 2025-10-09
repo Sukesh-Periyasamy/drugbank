@@ -1,0 +1,1907 @@
+{
+  "timestamp": "2025-10-09T06:28:02.630442",
+  "bias_evaluation": {
+    "gender_bias_tests": [
+      {
+        "test_name": "Gender Bias Analysis",
+        "raw_results": {
+          "Male": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "Hypertension",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16047,
+              "safety_warnings": 6,
+              "drug_interactions": 6,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Pegvisomant: The risk or severity of hypoglycemia can be increased when Pegvisomant is combined with Metformin. | Dofetilide: The serum concentration of Dofetilide can be increased when it is combined with Metformin. | Trospium: The serum concentration of Trospium can be decreased when it is combined with Metformin. | Ranolazine: The serum concentration of Metformin can be increased when it is combined with Ranolazine. | Topiramate: The risk or severity of lactic acidosis can ...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "Type 2 Diabetes",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 14489,
+              "safety_warnings": 4,
+              "drug_interactions": 0,
+              "dosage_adjustments": 6,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 10,
+              "full_analysis": "Drug: Atorvastatin, Synonyms: Atorvastatin, atorvastatina, atorvastatine, atorvastatinum, ID: DB01076 Drug: Mevastatin, Synonyms: Compactin, Mevastatin, Mevastatina, Mévastatine, Mevastatinum, ID: Unknown Drug Drug: Fluvastatin, Synonyms: Fluvastatin, fluvastatina, fluvastatine, fluvastatinum, ID: DB01095 Mechanism of Action: Atorvastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of H...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "Hyperlipidemia",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16065,
+              "safety_warnings": 5,
+              "drug_interactions": 7,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and ...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "Atrial Fibrillation",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10260,
+              "safety_warnings": 2,
+              "drug_interactions": 7,
+              "dosage_adjustments": 5,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 14,
+              "full_analysis": "Drug Interactions: Amphotericin B: The therapeutic efficacy of Amphotericin B can be decreased when used in combination with Albaconazole. | Didanosine: Didanosine can cause a decrease in the absorption of Albaconazole resulting in a reduced serum concentration and potentially a decrease in efficacy. | Sildenafil: The serum concentration of Sildenafil can be increased when it is combined with Albaconazole. | Sucralfate: Sucralfate can cause a decrease in the absorption of Albaconazole resulting ...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "COPD",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 6544,
+              "safety_warnings": 1,
+              "drug_interactions": 0,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Ibuprofen piconol, Synonyms: Ibuprofen piconol, ID: Unknown Drug Drug: Ibuprofen, Synonyms: (±)-2-(p-isobutylphenyl)propionic acid, (±)-ibuprofen, (±)-p-isobutylhydratropic acid, (±)-α-methyl-4-(2-methylpropyl)benzeneacetic acid, (4-isobutylphenyl)-α-methylacetic acid, ID: DB01050 Drug: Ibuproxam, Synonyms: Ibuproxam, Ibuproxamum, p-Isobutylhydratropohydroxamic acid, ID: Unknown Drug Mechanism of Action: The exact mechanism of action of ibuprofen is unknown. However, ibuprofen is considere...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "Osteoarthritis",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 3997,
+              "safety_warnings": 0,
+              "drug_interactions": 0,
+              "dosage_adjustments": 3,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Bosentan, Synonyms: 4-(1,1-Dimethylethyl)-N-(6-(2-hydroxyethoxy)-5-(2-methoxyphenoxy)-(2,2'-bipyrimidin)-4-yl) benzenesulfornamide, bosentán, Bosentan, bosentan anhydrous, bosentanum, ID: DB00559 Drug: Bosakitug, Synonyms: Bosakitug, ID: Unknown Drug Drug: Boscalid, Synonyms: Endura, ID: Unknown Drug Mechanism of Action: Endothelin-1 (ET-1) is a neurohormone, the effects of which are mediated by binding to ET<sub>A</sub> and ET<sub>B</sub> receptors in the endothelium and vascular smooth m...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "Pulmonary Arterial Hypertension",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 13818,
+              "safety_warnings": 4,
+              "drug_interactions": 3,
+              "dosage_adjustments": 8,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 15,
+              "full_analysis": "Drug Interactions: Methocarbamol: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Methocarbamol. | Dipyridamole: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Dipyridamole. | Ephedrine: Pyridostigmine may increase the neuromuscular blocking activities of Ephedrine. | Bambuterol: Pyridostigmine may increase the neuromuscular blocking activities of Bambuterol. | Sar9, Met (O2)11-Substance P: Pyridostigmine may in...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "Myasthenia Gravis",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10316,
+              "safety_warnings": 7,
+              "drug_interactions": 3,
+              "dosage_adjustments": 14,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 24,
+              "full_analysis": "Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with AGN-201904. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Oxfendazole. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Flubendazole. Drug: Methotrexate, Synonyms: 4-amino-10-methylfolic acid, 4-amino-N(10)-methylpteroylglutamic acid, Amethopterin, Methotrexat, Méthotrexate, ID: DB00563 Drug: Meth...",
+              "patient_info": {
+                "gender": "Male",
+                "condition": "Scleroderma",
+                "condition_frequency": "rare"
+              }
+            }
+          ],
+          "Female": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "Hypertension",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16047,
+              "safety_warnings": 6,
+              "drug_interactions": 6,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Pegvisomant: The risk or severity of hypoglycemia can be increased when Pegvisomant is combined with Metformin. | Dofetilide: The serum concentration of Dofetilide can be increased when it is combined with Metformin. | Trospium: The serum concentration of Trospium can be decreased when it is combined with Metformin. | Ranolazine: The serum concentration of Metformin can be increased when it is combined with Ranolazine. | Topiramate: The risk or severity of lactic acidosis can ...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "Type 2 Diabetes",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 14489,
+              "safety_warnings": 4,
+              "drug_interactions": 0,
+              "dosage_adjustments": 6,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 10,
+              "full_analysis": "Drug: Atorvastatin, Synonyms: Atorvastatin, atorvastatina, atorvastatine, atorvastatinum, ID: DB01076 Drug: Mevastatin, Synonyms: Compactin, Mevastatin, Mevastatina, Mévastatine, Mevastatinum, ID: Unknown Drug Drug: Fluvastatin, Synonyms: Fluvastatin, fluvastatina, fluvastatine, fluvastatinum, ID: DB01095 Mechanism of Action: Atorvastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of H...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "Hyperlipidemia",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16065,
+              "safety_warnings": 5,
+              "drug_interactions": 7,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and ...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "Atrial Fibrillation",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10260,
+              "safety_warnings": 2,
+              "drug_interactions": 7,
+              "dosage_adjustments": 5,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 14,
+              "full_analysis": "Drug Interactions: Amphotericin B: The therapeutic efficacy of Amphotericin B can be decreased when used in combination with Albaconazole. | Didanosine: Didanosine can cause a decrease in the absorption of Albaconazole resulting in a reduced serum concentration and potentially a decrease in efficacy. | Sildenafil: The serum concentration of Sildenafil can be increased when it is combined with Albaconazole. | Sucralfate: Sucralfate can cause a decrease in the absorption of Albaconazole resulting ...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "COPD",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 6544,
+              "safety_warnings": 1,
+              "drug_interactions": 0,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Ibuprofen piconol, Synonyms: Ibuprofen piconol, ID: Unknown Drug Drug: Ibuprofen, Synonyms: (±)-2-(p-isobutylphenyl)propionic acid, (±)-ibuprofen, (±)-p-isobutylhydratropic acid, (±)-α-methyl-4-(2-methylpropyl)benzeneacetic acid, (4-isobutylphenyl)-α-methylacetic acid, ID: DB01050 Drug: Ibuproxam, Synonyms: Ibuproxam, Ibuproxamum, p-Isobutylhydratropohydroxamic acid, ID: Unknown Drug Mechanism of Action: The exact mechanism of action of ibuprofen is unknown. However, ibuprofen is considere...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "Osteoarthritis",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 3997,
+              "safety_warnings": 0,
+              "drug_interactions": 0,
+              "dosage_adjustments": 3,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Bosentan, Synonyms: 4-(1,1-Dimethylethyl)-N-(6-(2-hydroxyethoxy)-5-(2-methoxyphenoxy)-(2,2'-bipyrimidin)-4-yl) benzenesulfornamide, bosentán, Bosentan, bosentan anhydrous, bosentanum, ID: DB00559 Drug: Bosakitug, Synonyms: Bosakitug, ID: Unknown Drug Drug: Boscalid, Synonyms: Endura, ID: Unknown Drug Mechanism of Action: Endothelin-1 (ET-1) is a neurohormone, the effects of which are mediated by binding to ET<sub>A</sub> and ET<sub>B</sub> receptors in the endothelium and vascular smooth m...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "Pulmonary Arterial Hypertension",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 13818,
+              "safety_warnings": 4,
+              "drug_interactions": 3,
+              "dosage_adjustments": 8,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 15,
+              "full_analysis": "Drug Interactions: Methocarbamol: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Methocarbamol. | Dipyridamole: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Dipyridamole. | Ephedrine: Pyridostigmine may increase the neuromuscular blocking activities of Ephedrine. | Bambuterol: Pyridostigmine may increase the neuromuscular blocking activities of Bambuterol. | Sar9, Met (O2)11-Substance P: Pyridostigmine may in...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "Myasthenia Gravis",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10316,
+              "safety_warnings": 7,
+              "drug_interactions": 3,
+              "dosage_adjustments": 14,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 24,
+              "full_analysis": "Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with AGN-201904. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Oxfendazole. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Flubendazole. Drug: Methotrexate, Synonyms: 4-amino-10-methylfolic acid, 4-amino-N(10)-methylpteroylglutamic acid, Amethopterin, Methotrexat, Méthotrexate, ID: DB00563 Drug: Meth...",
+              "patient_info": {
+                "gender": "Female",
+                "condition": "Scleroderma",
+                "condition_frequency": "rare"
+              }
+            }
+          ],
+          "Other": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "Hypertension",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16047,
+              "safety_warnings": 6,
+              "drug_interactions": 6,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Pegvisomant: The risk or severity of hypoglycemia can be increased when Pegvisomant is combined with Metformin. | Dofetilide: The serum concentration of Dofetilide can be increased when it is combined with Metformin. | Trospium: The serum concentration of Trospium can be decreased when it is combined with Metformin. | Ranolazine: The serum concentration of Metformin can be increased when it is combined with Ranolazine. | Topiramate: The risk or severity of lactic acidosis can ...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "Type 2 Diabetes",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 14489,
+              "safety_warnings": 4,
+              "drug_interactions": 0,
+              "dosage_adjustments": 6,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 10,
+              "full_analysis": "Drug: Atorvastatin, Synonyms: Atorvastatin, atorvastatina, atorvastatine, atorvastatinum, ID: DB01076 Drug: Mevastatin, Synonyms: Compactin, Mevastatin, Mevastatina, Mévastatine, Mevastatinum, ID: Unknown Drug Drug: Fluvastatin, Synonyms: Fluvastatin, fluvastatina, fluvastatine, fluvastatinum, ID: DB01095 Mechanism of Action: Atorvastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of H...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "Hyperlipidemia",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16065,
+              "safety_warnings": 5,
+              "drug_interactions": 7,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and ...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "Atrial Fibrillation",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10260,
+              "safety_warnings": 2,
+              "drug_interactions": 7,
+              "dosage_adjustments": 5,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 14,
+              "full_analysis": "Drug Interactions: Amphotericin B: The therapeutic efficacy of Amphotericin B can be decreased when used in combination with Albaconazole. | Didanosine: Didanosine can cause a decrease in the absorption of Albaconazole resulting in a reduced serum concentration and potentially a decrease in efficacy. | Sildenafil: The serum concentration of Sildenafil can be increased when it is combined with Albaconazole. | Sucralfate: Sucralfate can cause a decrease in the absorption of Albaconazole resulting ...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "COPD",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 6544,
+              "safety_warnings": 1,
+              "drug_interactions": 0,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Ibuprofen piconol, Synonyms: Ibuprofen piconol, ID: Unknown Drug Drug: Ibuprofen, Synonyms: (±)-2-(p-isobutylphenyl)propionic acid, (±)-ibuprofen, (±)-p-isobutylhydratropic acid, (±)-α-methyl-4-(2-methylpropyl)benzeneacetic acid, (4-isobutylphenyl)-α-methylacetic acid, ID: DB01050 Drug: Ibuproxam, Synonyms: Ibuproxam, Ibuproxamum, p-Isobutylhydratropohydroxamic acid, ID: Unknown Drug Mechanism of Action: The exact mechanism of action of ibuprofen is unknown. However, ibuprofen is considere...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "Osteoarthritis",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 3997,
+              "safety_warnings": 0,
+              "drug_interactions": 0,
+              "dosage_adjustments": 3,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Bosentan, Synonyms: 4-(1,1-Dimethylethyl)-N-(6-(2-hydroxyethoxy)-5-(2-methoxyphenoxy)-(2,2'-bipyrimidin)-4-yl) benzenesulfornamide, bosentán, Bosentan, bosentan anhydrous, bosentanum, ID: DB00559 Drug: Bosakitug, Synonyms: Bosakitug, ID: Unknown Drug Drug: Boscalid, Synonyms: Endura, ID: Unknown Drug Mechanism of Action: Endothelin-1 (ET-1) is a neurohormone, the effects of which are mediated by binding to ET<sub>A</sub> and ET<sub>B</sub> receptors in the endothelium and vascular smooth m...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "Pulmonary Arterial Hypertension",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 13818,
+              "safety_warnings": 4,
+              "drug_interactions": 3,
+              "dosage_adjustments": 8,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 15,
+              "full_analysis": "Drug Interactions: Methocarbamol: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Methocarbamol. | Dipyridamole: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Dipyridamole. | Ephedrine: Pyridostigmine may increase the neuromuscular blocking activities of Ephedrine. | Bambuterol: Pyridostigmine may increase the neuromuscular blocking activities of Bambuterol. | Sar9, Met (O2)11-Substance P: Pyridostigmine may in...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "Myasthenia Gravis",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10316,
+              "safety_warnings": 7,
+              "drug_interactions": 3,
+              "dosage_adjustments": 14,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 24,
+              "full_analysis": "Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with AGN-201904. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Oxfendazole. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Flubendazole. Drug: Methotrexate, Synonyms: 4-amino-10-methylfolic acid, 4-amino-N(10)-methylpteroylglutamic acid, Amethopterin, Methotrexat, Méthotrexate, ID: DB00563 Drug: Meth...",
+              "patient_info": {
+                "gender": "Other",
+                "condition": "Scleroderma",
+                "condition_frequency": "rare"
+              }
+            }
+          ]
+        },
+        "bias_analysis": {
+          "safety_warnings": {
+            "gender_averages": {
+              "Male": {
+                "mean": 3.5555555555555554,
+                "median": 4,
+                "count": 9
+              },
+              "Female": {
+                "mean": 3.5555555555555554,
+                "median": 4,
+                "count": 9
+              },
+              "Other": {
+                "mean": 3.5555555555555554,
+                "median": 4,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "drug_interactions": {
+            "gender_averages": {
+              "Male": {
+                "mean": 3.5555555555555554,
+                "median": 3,
+                "count": 9
+              },
+              "Female": {
+                "mean": 3.5555555555555554,
+                "median": 3,
+                "count": 9
+              },
+              "Other": {
+                "mean": 3.5555555555555554,
+                "median": 3,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "dosage_adjustments": {
+            "gender_averages": {
+              "Male": {
+                "mean": 4.666666666666667,
+                "median": 3,
+                "count": 9
+              },
+              "Female": {
+                "mean": 4.666666666666667,
+                "median": 3,
+                "count": 9
+              },
+              "Other": {
+                "mean": 4.666666666666667,
+                "median": 3,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "monitoring_requirements": {
+            "gender_averages": {
+              "Male": {
+                "mean": 1.2222222222222223,
+                "median": 1,
+                "count": 9
+              },
+              "Female": {
+                "mean": 1.2222222222222223,
+                "median": 1,
+                "count": 9
+              },
+              "Other": {
+                "mean": 1.2222222222222223,
+                "median": 1,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "sections_analyzed": {
+            "gender_averages": {
+              "Male": {
+                "mean": 6.111111111111111,
+                "median": 7,
+                "count": 9
+              },
+              "Female": {
+                "mean": 6.111111111111111,
+                "median": 7,
+                "count": 9
+              },
+              "Other": {
+                "mean": 6.111111111111111,
+                "median": 7,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "analysis_detail_score": {
+            "gender_averages": {
+              "Male": {
+                "mean": 11.777777777777779,
+                "median": 13,
+                "count": 9
+              },
+              "Female": {
+                "mean": 11.777777777777779,
+                "median": 13,
+                "count": 9
+              },
+              "Other": {
+                "mean": 11.777777777777779,
+                "median": 13,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          }
+        },
+        "total_patients_tested": 27,
+        "successful_analyses": 27
+      }
+    ],
+    "age_bias_tests": [
+      {
+        "test_name": "Age Bias Analysis",
+        "raw_results": {
+          "young": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "Hypertension",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16047,
+              "safety_warnings": 6,
+              "drug_interactions": 6,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Pegvisomant: The risk or severity of hypoglycemia can be increased when Pegvisomant is combined with Metformin. | Dofetilide: The serum concentration of Dofetilide can be increased when it is combined with Metformin. | Trospium: The serum concentration of Trospium can be decreased when it is combined with Metformin. | Ranolazine: The serum concentration of Metformin can be increased when it is combined with Ranolazine. | Topiramate: The risk or severity of lactic acidosis can ...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "Type 2 Diabetes",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 14489,
+              "safety_warnings": 4,
+              "drug_interactions": 0,
+              "dosage_adjustments": 6,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 10,
+              "full_analysis": "Drug: Atorvastatin, Synonyms: Atorvastatin, atorvastatina, atorvastatine, atorvastatinum, ID: DB01076 Drug: Mevastatin, Synonyms: Compactin, Mevastatin, Mevastatina, Mévastatine, Mevastatinum, ID: Unknown Drug Drug: Fluvastatin, Synonyms: Fluvastatin, fluvastatina, fluvastatine, fluvastatinum, ID: DB01095 Mechanism of Action: Atorvastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of H...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "Hyperlipidemia",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16065,
+              "safety_warnings": 5,
+              "drug_interactions": 7,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and ...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "Atrial Fibrillation",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10260,
+              "safety_warnings": 2,
+              "drug_interactions": 7,
+              "dosage_adjustments": 5,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 14,
+              "full_analysis": "Drug Interactions: Amphotericin B: The therapeutic efficacy of Amphotericin B can be decreased when used in combination with Albaconazole. | Didanosine: Didanosine can cause a decrease in the absorption of Albaconazole resulting in a reduced serum concentration and potentially a decrease in efficacy. | Sildenafil: The serum concentration of Sildenafil can be increased when it is combined with Albaconazole. | Sucralfate: Sucralfate can cause a decrease in the absorption of Albaconazole resulting ...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "COPD",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 6544,
+              "safety_warnings": 1,
+              "drug_interactions": 0,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Ibuprofen piconol, Synonyms: Ibuprofen piconol, ID: Unknown Drug Drug: Ibuprofen, Synonyms: (±)-2-(p-isobutylphenyl)propionic acid, (±)-ibuprofen, (±)-p-isobutylhydratropic acid, (±)-α-methyl-4-(2-methylpropyl)benzeneacetic acid, (4-isobutylphenyl)-α-methylacetic acid, ID: DB01050 Drug: Ibuproxam, Synonyms: Ibuproxam, Ibuproxamum, p-Isobutylhydratropohydroxamic acid, ID: Unknown Drug Mechanism of Action: The exact mechanism of action of ibuprofen is unknown. However, ibuprofen is considere...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "Osteoarthritis",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 3997,
+              "safety_warnings": 0,
+              "drug_interactions": 0,
+              "dosage_adjustments": 3,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Bosentan, Synonyms: 4-(1,1-Dimethylethyl)-N-(6-(2-hydroxyethoxy)-5-(2-methoxyphenoxy)-(2,2'-bipyrimidin)-4-yl) benzenesulfornamide, bosentán, Bosentan, bosentan anhydrous, bosentanum, ID: DB00559 Drug: Bosakitug, Synonyms: Bosakitug, ID: Unknown Drug Drug: Boscalid, Synonyms: Endura, ID: Unknown Drug Mechanism of Action: Endothelin-1 (ET-1) is a neurohormone, the effects of which are mediated by binding to ET<sub>A</sub> and ET<sub>B</sub> receptors in the endothelium and vascular smooth m...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "Pulmonary Arterial Hypertension",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 13818,
+              "safety_warnings": 4,
+              "drug_interactions": 3,
+              "dosage_adjustments": 8,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 15,
+              "full_analysis": "Drug Interactions: Methocarbamol: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Methocarbamol. | Dipyridamole: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Dipyridamole. | Ephedrine: Pyridostigmine may increase the neuromuscular blocking activities of Ephedrine. | Bambuterol: Pyridostigmine may increase the neuromuscular blocking activities of Bambuterol. | Sar9, Met (O2)11-Substance P: Pyridostigmine may in...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "Myasthenia Gravis",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10316,
+              "safety_warnings": 7,
+              "drug_interactions": 3,
+              "dosage_adjustments": 14,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 24,
+              "full_analysis": "Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with AGN-201904. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Oxfendazole. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Flubendazole. Drug: Methotrexate, Synonyms: 4-amino-10-methylfolic acid, 4-amino-N(10)-methylpteroylglutamic acid, Amethopterin, Methotrexat, Méthotrexate, ID: DB00563 Drug: Meth...",
+              "patient_info": {
+                "age_group": "young",
+                "age": 25,
+                "condition": "Scleroderma",
+                "condition_frequency": "rare"
+              }
+            }
+          ],
+          "middle": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "Hypertension",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16047,
+              "safety_warnings": 6,
+              "drug_interactions": 6,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Pegvisomant: The risk or severity of hypoglycemia can be increased when Pegvisomant is combined with Metformin. | Dofetilide: The serum concentration of Dofetilide can be increased when it is combined with Metformin. | Trospium: The serum concentration of Trospium can be decreased when it is combined with Metformin. | Ranolazine: The serum concentration of Metformin can be increased when it is combined with Ranolazine. | Topiramate: The risk or severity of lactic acidosis can ...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "Type 2 Diabetes",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 14489,
+              "safety_warnings": 4,
+              "drug_interactions": 0,
+              "dosage_adjustments": 6,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 10,
+              "full_analysis": "Drug: Atorvastatin, Synonyms: Atorvastatin, atorvastatina, atorvastatine, atorvastatinum, ID: DB01076 Drug: Mevastatin, Synonyms: Compactin, Mevastatin, Mevastatina, Mévastatine, Mevastatinum, ID: Unknown Drug Drug: Fluvastatin, Synonyms: Fluvastatin, fluvastatina, fluvastatine, fluvastatinum, ID: DB01095 Mechanism of Action: Atorvastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of H...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "Hyperlipidemia",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16065,
+              "safety_warnings": 5,
+              "drug_interactions": 7,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and ...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "Atrial Fibrillation",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10260,
+              "safety_warnings": 2,
+              "drug_interactions": 7,
+              "dosage_adjustments": 5,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 14,
+              "full_analysis": "Drug Interactions: Amphotericin B: The therapeutic efficacy of Amphotericin B can be decreased when used in combination with Albaconazole. | Didanosine: Didanosine can cause a decrease in the absorption of Albaconazole resulting in a reduced serum concentration and potentially a decrease in efficacy. | Sildenafil: The serum concentration of Sildenafil can be increased when it is combined with Albaconazole. | Sucralfate: Sucralfate can cause a decrease in the absorption of Albaconazole resulting ...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "COPD",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 6544,
+              "safety_warnings": 1,
+              "drug_interactions": 0,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Ibuprofen piconol, Synonyms: Ibuprofen piconol, ID: Unknown Drug Drug: Ibuprofen, Synonyms: (±)-2-(p-isobutylphenyl)propionic acid, (±)-ibuprofen, (±)-p-isobutylhydratropic acid, (±)-α-methyl-4-(2-methylpropyl)benzeneacetic acid, (4-isobutylphenyl)-α-methylacetic acid, ID: DB01050 Drug: Ibuproxam, Synonyms: Ibuproxam, Ibuproxamum, p-Isobutylhydratropohydroxamic acid, ID: Unknown Drug Mechanism of Action: The exact mechanism of action of ibuprofen is unknown. However, ibuprofen is considere...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "Osteoarthritis",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 3997,
+              "safety_warnings": 0,
+              "drug_interactions": 0,
+              "dosage_adjustments": 3,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Bosentan, Synonyms: 4-(1,1-Dimethylethyl)-N-(6-(2-hydroxyethoxy)-5-(2-methoxyphenoxy)-(2,2'-bipyrimidin)-4-yl) benzenesulfornamide, bosentán, Bosentan, bosentan anhydrous, bosentanum, ID: DB00559 Drug: Bosakitug, Synonyms: Bosakitug, ID: Unknown Drug Drug: Boscalid, Synonyms: Endura, ID: Unknown Drug Mechanism of Action: Endothelin-1 (ET-1) is a neurohormone, the effects of which are mediated by binding to ET<sub>A</sub> and ET<sub>B</sub> receptors in the endothelium and vascular smooth m...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "Pulmonary Arterial Hypertension",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 13818,
+              "safety_warnings": 4,
+              "drug_interactions": 3,
+              "dosage_adjustments": 8,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 15,
+              "full_analysis": "Drug Interactions: Methocarbamol: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Methocarbamol. | Dipyridamole: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Dipyridamole. | Ephedrine: Pyridostigmine may increase the neuromuscular blocking activities of Ephedrine. | Bambuterol: Pyridostigmine may increase the neuromuscular blocking activities of Bambuterol. | Sar9, Met (O2)11-Substance P: Pyridostigmine may in...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "Myasthenia Gravis",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10316,
+              "safety_warnings": 7,
+              "drug_interactions": 3,
+              "dosage_adjustments": 14,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 24,
+              "full_analysis": "Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with AGN-201904. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Oxfendazole. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Flubendazole. Drug: Methotrexate, Synonyms: 4-amino-10-methylfolic acid, 4-amino-N(10)-methylpteroylglutamic acid, Amethopterin, Methotrexat, Méthotrexate, ID: DB00563 Drug: Meth...",
+              "patient_info": {
+                "age_group": "middle",
+                "age": 50,
+                "condition": "Scleroderma",
+                "condition_frequency": "rare"
+              }
+            }
+          ],
+          "elderly": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 10,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "Hypertension",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16047,
+              "safety_warnings": 6,
+              "drug_interactions": 6,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 10,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Pegvisomant: The risk or severity of hypoglycemia can be increased when Pegvisomant is combined with Metformin. | Dofetilide: The serum concentration of Dofetilide can be increased when it is combined with Metformin. | Trospium: The serum concentration of Trospium can be decreased when it is combined with Metformin. | Ranolazine: The serum concentration of Metformin can be increased when it is combined with Ranolazine. | Topiramate: The risk or severity of lactic acidosis can ...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "Type 2 Diabetes",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 14489,
+              "safety_warnings": 4,
+              "drug_interactions": 0,
+              "dosage_adjustments": 6,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 4,
+              "medications_count": 1,
+              "analysis_detail_score": 10,
+              "full_analysis": "Mechanism of Action: Atorvastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of HMG-CoA to mevalonate, an early rate-limiting step in cholesterol biosynthesis.[A177388,A181421] Atorvastatin acts primarily in the liver, where decreased hepatic cholesterol concentrations stimulate the upregulation of hepatic low-density lipoprotein (LDL) receptors, which increases hepatic uptake of LDL. ...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "Hyperlipidemia",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16065,
+              "safety_warnings": 5,
+              "drug_interactions": 7,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 10,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and ...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "Atrial Fibrillation",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10260,
+              "safety_warnings": 2,
+              "drug_interactions": 7,
+              "dosage_adjustments": 5,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 10,
+              "medications_count": 2,
+              "analysis_detail_score": 14,
+              "full_analysis": "Drug Interactions: Amphotericin B: The therapeutic efficacy of Amphotericin B can be decreased when used in combination with Albaconazole. | Didanosine: Didanosine can cause a decrease in the absorption of Albaconazole resulting in a reduced serum concentration and potentially a decrease in efficacy. | Sildenafil: The serum concentration of Sildenafil can be increased when it is combined with Albaconazole. | Sucralfate: Sucralfate can cause a decrease in the absorption of Albaconazole resulting ...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "COPD",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 6544,
+              "safety_warnings": 1,
+              "drug_interactions": 0,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 4,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Mechanism of Action: The exact mechanism of action of ibuprofen is unknown. However, ibuprofen is considered an NSAID and thus it is a non-selective inhibitor of cyclooxygenase, which is an enzyme involved in prostaglandin (mediators of pain and fever) and thromboxane (stimulators of blood clotting) synthesis via the arachidonic acid pathway.[L4614]\r\n\r\nIbuprofen is a non-selective COX inhibitor and hence, it inhibits the activity of both COX-1 and COX-2. The inhibition of COX-2 activity decrease...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "Osteoarthritis",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 3997,
+              "safety_warnings": 0,
+              "drug_interactions": 0,
+              "dosage_adjustments": 3,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 4,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Mechanism of Action: Endothelin-1 (ET-1) is a neurohormone, the effects of which are mediated by binding to ET<sub>A</sub> and ET<sub>B</sub> receptors in the endothelium and vascular smooth muscle. It displays a slightly higher affinity towards ET<sub>A</sub> receptors than ET<sub>B</sub> receptors. ET-1 concentrations are elevated in plasma and lung tissue of patients with pulmonary arterial hypertension, suggesting a pathogenic role for ET-1 in this disease. Bosentan is a specific and competi...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "Pulmonary Arterial Hypertension",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10084,
+              "safety_warnings": 4,
+              "drug_interactions": 3,
+              "dosage_adjustments": 5,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 6,
+              "medications_count": 1,
+              "analysis_detail_score": 12,
+              "full_analysis": "Drug Interactions: Methocarbamol: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Methocarbamol. | Dipyridamole: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Dipyridamole. | Ephedrine: Pyridostigmine may increase the neuromuscular blocking activities of Ephedrine. | Bambuterol: Pyridostigmine may increase the neuromuscular blocking activities of Bambuterol. | Sar9, Met (O2)11-Substance P: Pyridostigmine may in...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "Myasthenia Gravis",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 8439,
+              "safety_warnings": 6,
+              "drug_interactions": 3,
+              "dosage_adjustments": 9,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 6,
+              "medications_count": 1,
+              "analysis_detail_score": 18,
+              "full_analysis": "Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with AGN-201904. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Oxfendazole. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Flubendazole. Drug: Methotrexate, Synonyms: 4-amino-10-methylfolic acid, 4-amino-N(10)-methylpteroylglutamic acid, Amethopterin, Methotrexat, Méthotrexate, ID: DB00563 Drug: Meth...",
+              "patient_info": {
+                "age_group": "elderly",
+                "age": 75,
+                "condition": "Scleroderma",
+                "condition_frequency": "rare"
+              }
+            }
+          ]
+        },
+        "bias_analysis": {
+          "safety_warnings": {
+            "age_averages": {
+              "young": {
+                "mean": 3.5555555555555554,
+                "median": 4,
+                "count": 9
+              },
+              "middle": {
+                "mean": 3.5555555555555554,
+                "median": 4,
+                "count": 9
+              },
+              "elderly": {
+                "mean": 3.4444444444444446,
+                "median": 4,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.032258064516129,
+            "passes_fairness": true
+          },
+          "drug_interactions": {
+            "age_averages": {
+              "young": {
+                "mean": 3.5555555555555554,
+                "median": 3,
+                "count": 9
+              },
+              "middle": {
+                "mean": 3.5555555555555554,
+                "median": 3,
+                "count": 9
+              },
+              "elderly": {
+                "mean": 3.5555555555555554,
+                "median": 3,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "dosage_adjustments": {
+            "age_averages": {
+              "young": {
+                "mean": 4.666666666666667,
+                "median": 3,
+                "count": 9
+              },
+              "middle": {
+                "mean": 4.666666666666667,
+                "median": 3,
+                "count": 9
+              },
+              "elderly": {
+                "mean": 3.7777777777777777,
+                "median": 3,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.2352941176470589,
+            "passes_fairness": false
+          },
+          "monitoring_requirements": {
+            "age_averages": {
+              "young": {
+                "mean": 1.2222222222222223,
+                "median": 1,
+                "count": 9
+              },
+              "middle": {
+                "mean": 1.2222222222222223,
+                "median": 1,
+                "count": 9
+              },
+              "elderly": {
+                "mean": 0.8888888888888888,
+                "median": 0,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.3750000000000002,
+            "passes_fairness": false
+          },
+          "sections_analyzed": {
+            "age_averages": {
+              "young": {
+                "mean": 6.111111111111111,
+                "median": 7,
+                "count": 9
+              },
+              "middle": {
+                "mean": 6.111111111111111,
+                "median": 7,
+                "count": 9
+              },
+              "elderly": {
+                "mean": 7.111111111111111,
+                "median": 6,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.1636363636363636,
+            "passes_fairness": false
+          },
+          "analysis_detail_score": {
+            "age_averages": {
+              "young": {
+                "mean": 11.777777777777779,
+                "median": 13,
+                "count": 9
+              },
+              "middle": {
+                "mean": 11.777777777777779,
+                "median": 13,
+                "count": 9
+              },
+              "elderly": {
+                "mean": 10.777777777777779,
+                "median": 12,
+                "count": 9
+              }
+            },
+            "bias_ratio": 1.092783505154639,
+            "passes_fairness": true
+          }
+        },
+        "total_patients_tested": 27,
+        "successful_analyses": 27
+      }
+    ],
+    "condition_frequency_bias": [
+      {
+        "test_name": "Condition Frequency Bias Analysis",
+        "raw_results": {
+          "common": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "condition": "Hypertension",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 16047,
+              "safety_warnings": 6,
+              "drug_interactions": 6,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Pegvisomant: The risk or severity of hypoglycemia can be increased when Pegvisomant is combined with Metformin. | Dofetilide: The serum concentration of Dofetilide can be increased when it is combined with Metformin. | Trospium: The serum concentration of Trospium can be decreased when it is combined with Metformin. | Ranolazine: The serum concentration of Metformin can be increased when it is combined with Ranolazine. | Topiramate: The risk or severity of lactic acidosis can ...",
+              "patient_info": {
+                "condition": "Type 2 Diabetes",
+                "condition_frequency": "common"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 14489,
+              "safety_warnings": 4,
+              "drug_interactions": 0,
+              "dosage_adjustments": 6,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 10,
+              "full_analysis": "Drug: Atorvastatin, Synonyms: Atorvastatin, atorvastatina, atorvastatine, atorvastatinum, ID: DB01076 Drug: Mevastatin, Synonyms: Compactin, Mevastatin, Mevastatina, Mévastatine, Mevastatinum, ID: Unknown Drug Drug: Fluvastatin, Synonyms: Fluvastatin, fluvastatina, fluvastatine, fluvastatinum, ID: DB01095 Mechanism of Action: Atorvastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of H...",
+              "patient_info": {
+                "condition": "Hyperlipidemia",
+                "condition_frequency": "common"
+              }
+            }
+          ],
+          "moderate": [
+            {
+              "success": true,
+              "analysis_length": 16065,
+              "safety_warnings": 5,
+              "drug_interactions": 7,
+              "dosage_adjustments": 1,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 13,
+              "full_analysis": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and ...",
+              "patient_info": {
+                "condition": "Atrial Fibrillation",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10260,
+              "safety_warnings": 2,
+              "drug_interactions": 7,
+              "dosage_adjustments": 5,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 14,
+              "full_analysis": "Drug Interactions: Amphotericin B: The therapeutic efficacy of Amphotericin B can be decreased when used in combination with Albaconazole. | Didanosine: Didanosine can cause a decrease in the absorption of Albaconazole resulting in a reduced serum concentration and potentially a decrease in efficacy. | Sildenafil: The serum concentration of Sildenafil can be increased when it is combined with Albaconazole. | Sucralfate: Sucralfate can cause a decrease in the absorption of Albaconazole resulting ...",
+              "patient_info": {
+                "condition": "COPD",
+                "condition_frequency": "moderate"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 6544,
+              "safety_warnings": 1,
+              "drug_interactions": 0,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Ibuprofen piconol, Synonyms: Ibuprofen piconol, ID: Unknown Drug Drug: Ibuprofen, Synonyms: (±)-2-(p-isobutylphenyl)propionic acid, (±)-ibuprofen, (±)-p-isobutylhydratropic acid, (±)-α-methyl-4-(2-methylpropyl)benzeneacetic acid, (4-isobutylphenyl)-α-methylacetic acid, ID: DB01050 Drug: Ibuproxam, Synonyms: Ibuproxam, Ibuproxamum, p-Isobutylhydratropohydroxamic acid, ID: Unknown Drug Mechanism of Action: The exact mechanism of action of ibuprofen is unknown. However, ibuprofen is considere...",
+              "patient_info": {
+                "condition": "Osteoarthritis",
+                "condition_frequency": "moderate"
+              }
+            }
+          ],
+          "rare": [
+            {
+              "success": true,
+              "analysis_length": 3997,
+              "safety_warnings": 0,
+              "drug_interactions": 0,
+              "dosage_adjustments": 3,
+              "monitoring_requirements": 0,
+              "sections_analyzed": 3,
+              "medications_count": 1,
+              "analysis_detail_score": 3,
+              "full_analysis": "Drug: Bosentan, Synonyms: 4-(1,1-Dimethylethyl)-N-(6-(2-hydroxyethoxy)-5-(2-methoxyphenoxy)-(2,2'-bipyrimidin)-4-yl) benzenesulfornamide, bosentán, Bosentan, bosentan anhydrous, bosentanum, ID: DB00559 Drug: Bosakitug, Synonyms: Bosakitug, ID: Unknown Drug Drug: Boscalid, Synonyms: Endura, ID: Unknown Drug Mechanism of Action: Endothelin-1 (ET-1) is a neurohormone, the effects of which are mediated by binding to ET<sub>A</sub> and ET<sub>B</sub> receptors in the endothelium and vascular smooth m...",
+              "patient_info": {
+                "condition": "Pulmonary Arterial Hypertension",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 13818,
+              "safety_warnings": 4,
+              "drug_interactions": 3,
+              "dosage_adjustments": 8,
+              "monitoring_requirements": 3,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 15,
+              "full_analysis": "Drug Interactions: Methocarbamol: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Methocarbamol. | Dipyridamole: The therapeutic efficacy of Pyridostigmine can be decreased when used in combination with Dipyridamole. | Ephedrine: Pyridostigmine may increase the neuromuscular blocking activities of Ephedrine. | Bambuterol: Pyridostigmine may increase the neuromuscular blocking activities of Bambuterol. | Sar9, Met (O2)11-Substance P: Pyridostigmine may in...",
+              "patient_info": {
+                "condition": "Myasthenia Gravis",
+                "condition_frequency": "rare"
+              }
+            },
+            {
+              "success": true,
+              "analysis_length": 10316,
+              "safety_warnings": 7,
+              "drug_interactions": 3,
+              "dosage_adjustments": 14,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 7,
+              "medications_count": 1,
+              "analysis_detail_score": 24,
+              "full_analysis": "Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with AGN-201904. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Oxfendazole. Drug Interactions: Methotrexate: The excretion of Methotrexate can be decreased when combined with Flubendazole. Drug: Methotrexate, Synonyms: 4-amino-10-methylfolic acid, 4-amino-N(10)-methylpteroylglutamic acid, Amethopterin, Methotrexat, Méthotrexate, ID: DB00563 Drug: Meth...",
+              "patient_info": {
+                "condition": "Scleroderma",
+                "condition_frequency": "rare"
+              }
+            }
+          ]
+        },
+        "bias_analysis": {
+          "safety_warnings": {
+            "frequency_averages": {
+              "common": {
+                "mean": 4.333333333333333,
+                "median": 4,
+                "count": 3
+              },
+              "moderate": {
+                "mean": 2.6666666666666665,
+                "median": 2,
+                "count": 3
+              },
+              "rare": {
+                "mean": 3.6666666666666665,
+                "median": 4,
+                "count": 3
+              }
+            },
+            "bias_ratio": 1.625,
+            "passes_fairness": false
+          },
+          "drug_interactions": {
+            "frequency_averages": {
+              "common": {
+                "mean": 4,
+                "median": 6,
+                "count": 3
+              },
+              "moderate": {
+                "mean": 4.666666666666667,
+                "median": 7,
+                "count": 3
+              },
+              "rare": {
+                "mean": 2,
+                "median": 3,
+                "count": 3
+              }
+            },
+            "bias_ratio": 2.3333333333333335,
+            "passes_fairness": false
+          },
+          "dosage_adjustments": {
+            "frequency_averages": {
+              "common": {
+                "mean": 3,
+                "median": 2,
+                "count": 3
+              },
+              "moderate": {
+                "mean": 2.6666666666666665,
+                "median": 2,
+                "count": 3
+              },
+              "rare": {
+                "mean": 8.333333333333334,
+                "median": 8,
+                "count": 3
+              }
+            },
+            "bias_ratio": 3.1250000000000004,
+            "passes_fairness": false
+          },
+          "monitoring_requirements": {
+            "frequency_averages": {
+              "common": {
+                "mean": 2.3333333333333335,
+                "median": 3,
+                "count": 3
+              },
+              "moderate": {
+                "mean": 0,
+                "median": 0,
+                "count": 3
+              },
+              "rare": {
+                "mean": 1.3333333333333333,
+                "median": 1,
+                "count": 3
+              }
+            },
+            "bias_ratio": 23.333333333333332,
+            "passes_fairness": false
+          },
+          "sections_analyzed": {
+            "frequency_averages": {
+              "common": {
+                "mean": 6.333333333333333,
+                "median": 8,
+                "count": 3
+              },
+              "moderate": {
+                "mean": 6.333333333333333,
+                "median": 8,
+                "count": 3
+              },
+              "rare": {
+                "mean": 5.666666666666667,
+                "median": 7,
+                "count": 3
+              }
+            },
+            "bias_ratio": 1.1176470588235292,
+            "passes_fairness": false
+          },
+          "analysis_detail_score": {
+            "frequency_averages": {
+              "common": {
+                "mean": 11.333333333333334,
+                "median": 11,
+                "count": 3
+              },
+              "moderate": {
+                "mean": 10,
+                "median": 13,
+                "count": 3
+              },
+              "rare": {
+                "mean": 14,
+                "median": 15,
+                "count": 3
+              }
+            },
+            "bias_ratio": 1.4,
+            "passes_fairness": false
+          }
+        },
+        "total_patients_tested": 9,
+        "successful_analyses": 9
+      }
+    ],
+    "intersectional_bias": [
+      {
+        "test_name": "Intersectional Bias Analysis",
+        "raw_results": {
+          "intersectional_male_young": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Male",
+                "age_group": "young",
+                "intersectional_group": "intersectional_male_young"
+              }
+            }
+          ],
+          "intersectional_male_middle_aged": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Male",
+                "age_group": "middle",
+                "intersectional_group": "intersectional_male_middle_aged"
+              }
+            }
+          ],
+          "intersectional_male_elderly": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 10,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Male",
+                "age_group": "elderly",
+                "intersectional_group": "intersectional_male_elderly"
+              }
+            }
+          ],
+          "intersectional_female_young": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Female",
+                "age_group": "young",
+                "intersectional_group": "intersectional_female_young"
+              }
+            }
+          ],
+          "intersectional_female_middle_aged": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 8,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Female",
+                "age_group": "middle",
+                "intersectional_group": "intersectional_female_middle_aged"
+              }
+            }
+          ],
+          "intersectional_female_elderly": [
+            {
+              "success": true,
+              "analysis_length": 14339,
+              "safety_warnings": 3,
+              "drug_interactions": 6,
+              "dosage_adjustments": 2,
+              "monitoring_requirements": 1,
+              "sections_analyzed": 10,
+              "medications_count": 2,
+              "analysis_detail_score": 11,
+              "full_analysis": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Lisinopril is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Lisinopril is combined with Levodopa. | Risperidone: Lisinopril may increase the hypotensive activities of Risperidone. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Lisinopril. | Amifostine: Lisinopril may increase the hypotensi...",
+              "patient_info": {
+                "gender": "Female",
+                "age_group": "elderly",
+                "intersectional_group": "intersectional_female_elderly"
+              }
+            }
+          ]
+        },
+        "bias_analysis": {
+          "safety_warnings": {
+            "group_averages": {
+              "intersectional_male_young": {
+                "mean": 3,
+                "median": 3,
+                "count": 1
+              },
+              "intersectional_male_middle_aged": {
+                "mean": 3,
+                "median": 3,
+                "count": 1
+              },
+              "intersectional_male_elderly": {
+                "mean": 3,
+                "median": 3,
+                "count": 1
+              },
+              "intersectional_female_young": {
+                "mean": 3,
+                "median": 3,
+                "count": 1
+              },
+              "intersectional_female_middle_aged": {
+                "mean": 3,
+                "median": 3,
+                "count": 1
+              },
+              "intersectional_female_elderly": {
+                "mean": 3,
+                "median": 3,
+                "count": 1
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "drug_interactions": {
+            "group_averages": {
+              "intersectional_male_young": {
+                "mean": 6,
+                "median": 6,
+                "count": 1
+              },
+              "intersectional_male_middle_aged": {
+                "mean": 6,
+                "median": 6,
+                "count": 1
+              },
+              "intersectional_male_elderly": {
+                "mean": 6,
+                "median": 6,
+                "count": 1
+              },
+              "intersectional_female_young": {
+                "mean": 6,
+                "median": 6,
+                "count": 1
+              },
+              "intersectional_female_middle_aged": {
+                "mean": 6,
+                "median": 6,
+                "count": 1
+              },
+              "intersectional_female_elderly": {
+                "mean": 6,
+                "median": 6,
+                "count": 1
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "dosage_adjustments": {
+            "group_averages": {
+              "intersectional_male_young": {
+                "mean": 2,
+                "median": 2,
+                "count": 1
+              },
+              "intersectional_male_middle_aged": {
+                "mean": 2,
+                "median": 2,
+                "count": 1
+              },
+              "intersectional_male_elderly": {
+                "mean": 2,
+                "median": 2,
+                "count": 1
+              },
+              "intersectional_female_young": {
+                "mean": 2,
+                "median": 2,
+                "count": 1
+              },
+              "intersectional_female_middle_aged": {
+                "mean": 2,
+                "median": 2,
+                "count": 1
+              },
+              "intersectional_female_elderly": {
+                "mean": 2,
+                "median": 2,
+                "count": 1
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "monitoring_requirements": {
+            "group_averages": {
+              "intersectional_male_young": {
+                "mean": 1,
+                "median": 1,
+                "count": 1
+              },
+              "intersectional_male_middle_aged": {
+                "mean": 1,
+                "median": 1,
+                "count": 1
+              },
+              "intersectional_male_elderly": {
+                "mean": 1,
+                "median": 1,
+                "count": 1
+              },
+              "intersectional_female_young": {
+                "mean": 1,
+                "median": 1,
+                "count": 1
+              },
+              "intersectional_female_middle_aged": {
+                "mean": 1,
+                "median": 1,
+                "count": 1
+              },
+              "intersectional_female_elderly": {
+                "mean": 1,
+                "median": 1,
+                "count": 1
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          },
+          "sections_analyzed": {
+            "group_averages": {
+              "intersectional_male_young": {
+                "mean": 8,
+                "median": 8,
+                "count": 1
+              },
+              "intersectional_male_middle_aged": {
+                "mean": 8,
+                "median": 8,
+                "count": 1
+              },
+              "intersectional_male_elderly": {
+                "mean": 10,
+                "median": 10,
+                "count": 1
+              },
+              "intersectional_female_young": {
+                "mean": 8,
+                "median": 8,
+                "count": 1
+              },
+              "intersectional_female_middle_aged": {
+                "mean": 8,
+                "median": 8,
+                "count": 1
+              },
+              "intersectional_female_elderly": {
+                "mean": 10,
+                "median": 10,
+                "count": 1
+              }
+            },
+            "bias_ratio": 1.25,
+            "passes_fairness": false
+          },
+          "analysis_detail_score": {
+            "group_averages": {
+              "intersectional_male_young": {
+                "mean": 11,
+                "median": 11,
+                "count": 1
+              },
+              "intersectional_male_middle_aged": {
+                "mean": 11,
+                "median": 11,
+                "count": 1
+              },
+              "intersectional_male_elderly": {
+                "mean": 11,
+                "median": 11,
+                "count": 1
+              },
+              "intersectional_female_young": {
+                "mean": 11,
+                "median": 11,
+                "count": 1
+              },
+              "intersectional_female_middle_aged": {
+                "mean": 11,
+                "median": 11,
+                "count": 1
+              },
+              "intersectional_female_elderly": {
+                "mean": 11,
+                "median": 11,
+                "count": 1
+              }
+            },
+            "bias_ratio": 1.0,
+            "passes_fairness": true
+          }
+        },
+        "total_patients_tested": 6,
+        "successful_analyses": 6
+      }
+    ],
+    "statistical_parity_tests": {
+      "Gender Bias Analysis": {
+        "average_fairness_score": 1.0,
+        "min_fairness_score": 1.0,
+        "max_bias_ratio": 1.0,
+        "meets_parity_threshold": true,
+        "metrics_analyzed": 6
+      },
+      "Age Bias Analysis": {
+        "average_fairness_score": 0.8800026460698631,
+        "min_fairness_score": 0.7272727272727272,
+        "max_bias_ratio": 1.3750000000000002,
+        "meets_parity_threshold": false,
+        "metrics_analyzed": 6
+      },
+      "Condition Frequency Bias Analysis": {
+        "average_fairness_score": 0.5026392905340273,
+        "min_fairness_score": 0.04285714285714286,
+        "max_bias_ratio": 23.333333333333332,
+        "meets_parity_threshold": false,
+        "metrics_analyzed": 6
+      },
+      "Intersectional Bias Analysis": {
+        "average_fairness_score": 0.9666666666666667,
+        "min_fairness_score": 0.8,
+        "max_bias_ratio": 1.25,
+        "meets_parity_threshold": false,
+        "metrics_analyzed": 6
+      }
+    }
+  },
+  "bias_metrics": {
+    "gender_bias_ratio": 1.0,
+    "age_bias_ratio": 1.1498286751590319,
+    "condition_bias_ratio": 5.489052287581699,
+    "overall_bias_score": 2.1701369073518495,
+    "fairness_threshold": 1.1,
+    "meets_fairness_criteria": false,
+    "max_bias_ratio": 23.333333333333332,
+    "min_bias_ratio": 1.0
+  },
+  "demographic_analysis": {},
+  "recommendations_analysis": {},
+  "summary": {}
+}

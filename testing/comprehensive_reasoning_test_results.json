@@ -1,0 +1,940 @@
+{
+  "timestamp": "2025-10-09T05:52:27.666880",
+  "test_suite_version": "1.0",
+  "comprehensive_results": {
+    "clinical_reasoning": {
+      "timestamp": "2025-10-09T05:52:27.667189",
+      "threshold_tests": [
+        {
+          "test_name": "Age Threshold (64 vs 65)",
+          "patient1_id": "AGE_64",
+          "patient2_id": "AGE_65",
+          "expected_behavior": "Age 65+ should trigger metabolism/dosage sections due to elderly status",
+          "patient1_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: eGFR: 65 mL/min/1.73m2, Creatinine: 1.2 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 64",
+            "medications_count": 2,
+            "total_sections": 8,
+            "unique_sections": [
+              "indications",
+              "interactions",
+              "names",
+              "pharmacology"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ],
+              "Lisinopril": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "patient2_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: eGFR: 65 mL/min/1.73m2, Creatinine: 1.2 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 65",
+            "medications_count": 2,
+            "total_sections": 12,
+            "unique_sections": [
+              "dosage",
+              "indications",
+              "interactions",
+              "metabolism",
+              "names",
+              "pharmacology"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "names"
+              ],
+              "Lisinopril": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": true,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "consistency_check": {
+            "sections_added": [
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "trigger_changes": {
+              "age_elderly": true,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": false,
+              "conditions_present": false,
+              "allergies_present": false,
+              "low_weight": false
+            },
+            "total_sections_change": 4
+          },
+          "clinical_appropriateness": true,
+          "issues": []
+        },
+        {
+          "test_name": "eGFR Threshold (61 vs 59)",
+          "patient1_id": "EGFR_61",
+          "patient2_id": "EGFR_59",
+          "expected_behavior": "eGFR <60 should trigger toxicity and metabolism sections",
+          "patient1_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: eGFR: 61 mL/min/1.73m2, Creatinine: 1.4 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 55",
+            "medications_count": 2,
+            "total_sections": 8,
+            "unique_sections": [
+              "indications",
+              "interactions",
+              "names",
+              "pharmacology"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ],
+              "Lisinopril": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "patient2_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: eGFR: 59 mL/min/1.73m2, Creatinine: 1.6 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 55",
+            "medications_count": 2,
+            "total_sections": 14,
+            "unique_sections": [
+              "dosage",
+              "indications",
+              "interactions",
+              "metabolism",
+              "names",
+              "pharmacology",
+              "toxicity"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "toxicity",
+                "names"
+              ],
+              "Lisinopril": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "toxicity",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": true,
+              "elevated_creatinine": true,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "consistency_check": {
+            "sections_added": [
+              "toxicity",
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "trigger_changes": {
+              "age_elderly": false,
+              "renal_impairment": true,
+              "elevated_creatinine": true,
+              "poor_diabetes_control": false,
+              "multiple_medications": false,
+              "conditions_present": false,
+              "allergies_present": false,
+              "low_weight": false
+            },
+            "total_sections_change": 6
+          },
+          "clinical_appropriateness": true,
+          "issues": []
+        },
+        {
+          "test_name": "Creatinine Threshold (1.4 vs 1.6)",
+          "patient1_id": "CREAT_1.4",
+          "patient2_id": "CREAT_1.6",
+          "expected_behavior": "Creatinine >1.5 should trigger toxicity concerns",
+          "patient1_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: Creatinine: 1.4 mg/dL, eGFR: 65 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 75kg, Age: 55",
+            "medications_count": 2,
+            "total_sections": 8,
+            "unique_sections": [
+              "indications",
+              "interactions",
+              "names",
+              "pharmacology"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ],
+              "Lisinopril": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "patient2_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: Creatinine: 1.6 mg/dL, eGFR: 62 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 75kg, Age: 55",
+            "medications_count": 2,
+            "total_sections": 14,
+            "unique_sections": [
+              "dosage",
+              "indications",
+              "interactions",
+              "metabolism",
+              "names",
+              "pharmacology",
+              "toxicity"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "toxicity",
+                "names"
+              ],
+              "Lisinopril": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "toxicity",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": true,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "consistency_check": {
+            "sections_added": [
+              "toxicity",
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "trigger_changes": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": true,
+              "poor_diabetes_control": false,
+              "multiple_medications": false,
+              "conditions_present": false,
+              "allergies_present": false,
+              "low_weight": false
+            },
+            "total_sections_change": 6
+          },
+          "clinical_appropriateness": true,
+          "issues": []
+        },
+        {
+          "test_name": "HbA1c Threshold (6.9% vs 7.1%)",
+          "patient1_id": "HBA1C_6.9",
+          "patient2_id": "HBA1C_7.1",
+          "expected_behavior": "HbA1c >7.0% should trigger toxicity/metabolism sections for poor control",
+          "patient1_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: HbA1c: 6.9%, Creatinine: 1.0 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 55",
+            "medications_count": 2,
+            "total_sections": 8,
+            "unique_sections": [
+              "indications",
+              "interactions",
+              "names",
+              "pharmacology"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ],
+              "Lisinopril": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "patient2_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: HbA1c: 7.1%, Creatinine: 1.0 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 55",
+            "medications_count": 2,
+            "total_sections": 10,
+            "unique_sections": [
+              "indications",
+              "interactions",
+              "names",
+              "pharmacology",
+              "toxicity"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "indications",
+                "interactions",
+                "pharmacology",
+                "toxicity",
+                "names"
+              ],
+              "Lisinopril": [
+                "indications",
+                "interactions",
+                "pharmacology",
+                "toxicity",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": true,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "consistency_check": {
+            "sections_added": [
+              "toxicity"
+            ],
+            "sections_removed": [],
+            "trigger_changes": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": true,
+              "multiple_medications": false,
+              "conditions_present": false,
+              "allergies_present": false,
+              "low_weight": false
+            },
+            "total_sections_change": 2
+          },
+          "clinical_appropriateness": true,
+          "issues": []
+        },
+        {
+          "test_name": "Combined Age+Renal (64+eGFR61 vs 65+eGFR59)",
+          "patient1_id": "COMBINED_LOW",
+          "patient2_id": "COMBINED_HIGH",
+          "expected_behavior": "Combined elderly + renal impairment should trigger comprehensive analysis",
+          "patient1_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: eGFR: 61 mL/min/1.73m2, Creatinine: 1.4 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 64",
+            "medications_count": 2,
+            "total_sections": 8,
+            "unique_sections": [
+              "indications",
+              "interactions",
+              "names",
+              "pharmacology"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ],
+              "Lisinopril": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "patient2_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: eGFR: 59 mL/min/1.73m2, Creatinine: 1.6 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 65",
+            "medications_count": 2,
+            "total_sections": 14,
+            "unique_sections": [
+              "dosage",
+              "indications",
+              "interactions",
+              "metabolism",
+              "names",
+              "pharmacology",
+              "toxicity"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "toxicity",
+                "names"
+              ],
+              "Lisinopril": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "toxicity",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": true,
+              "renal_impairment": true,
+              "elevated_creatinine": true,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "consistency_check": {
+            "sections_added": [
+              "toxicity",
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "trigger_changes": {
+              "age_elderly": true,
+              "renal_impairment": true,
+              "elevated_creatinine": true,
+              "poor_diabetes_control": false,
+              "multiple_medications": false,
+              "conditions_present": false,
+              "allergies_present": false,
+              "low_weight": false
+            },
+            "total_sections_change": 6
+          },
+          "clinical_appropriateness": true,
+          "issues": []
+        },
+        {
+          "test_name": "Weight Threshold (51kg vs 49kg)",
+          "patient1_id": "WEIGHT_51",
+          "patient2_id": "WEIGHT_49",
+          "expected_behavior": "Weight <50kg should trigger dosage/metabolism considerations",
+          "patient1_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: Creatinine: 1.0 mg/dL | Demographics: Sex: Male, Weight: 51kg, Age: 45",
+            "medications_count": 2,
+            "total_sections": 8,
+            "unique_sections": [
+              "indications",
+              "interactions",
+              "names",
+              "pharmacology"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ],
+              "Lisinopril": [
+                "interactions",
+                "pharmacology",
+                "indications",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": false
+            }
+          },
+          "patient2_reasoning": {
+            "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Allergies: Penicillin | Labs: Creatinine: 1.0 mg/dL | Demographics: Sex: Male, Weight: 49kg, Age: 45",
+            "medications_count": 2,
+            "total_sections": 12,
+            "unique_sections": [
+              "dosage",
+              "indications",
+              "interactions",
+              "metabolism",
+              "names",
+              "pharmacology"
+            ],
+            "section_breakdown": {
+              "Metformin": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "names"
+              ],
+              "Lisinopril": [
+                "indications",
+                "interactions",
+                "dosage",
+                "metabolism",
+                "pharmacology",
+                "names"
+              ]
+            },
+            "reasoning_triggers": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": true,
+              "conditions_present": true,
+              "allergies_present": true,
+              "low_weight": true
+            }
+          },
+          "consistency_check": {
+            "sections_added": [
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "trigger_changes": {
+              "age_elderly": false,
+              "renal_impairment": false,
+              "elevated_creatinine": false,
+              "poor_diabetes_control": false,
+              "multiple_medications": false,
+              "conditions_present": false,
+              "allergies_present": false,
+              "low_weight": true
+            },
+            "total_sections_change": 4
+          },
+          "clinical_appropriateness": true,
+          "issues": []
+        }
+      ],
+      "consistency_issues": [],
+      "summary": {
+        "total_threshold_tests": 6,
+        "consistent_behaviors": 6,
+        "inconsistent_behaviors": 0,
+        "clinical_accuracy": 100.0
+      }
+    },
+    "threshold_validation": {
+      "timestamp": "2025-10-09T05:52:27.671931",
+      "threshold_validations": [
+        {
+          "test_name": "Age Elderly Classification",
+          "parameter": "age",
+          "threshold": 65,
+          "patient1": {
+            "id": "THRESH_age_64",
+            "value": 64,
+            "sections": [
+              "interactions",
+              "names",
+              "indications",
+              "pharmacology"
+            ]
+          },
+          "patient2": {
+            "id": "THRESH_age_65",
+            "value": 65,
+            "sections": [
+              "indications",
+              "interactions",
+              "dosage",
+              "metabolism",
+              "pharmacology",
+              "names"
+            ]
+          },
+          "expected_behavior": {
+            "patient1_normal": true,
+            "patient2_triggered": true,
+            "threshold_crossed": true,
+            "should_trigger": true,
+            "expected_sections": [
+              "dosage",
+              "metabolism"
+            ]
+          },
+          "validation": {
+            "behavior_correct": true,
+            "sections_added": [
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "net_change": 2,
+            "issues": []
+          },
+          "passed": true
+        },
+        {
+          "test_name": "Age Near-Threshold",
+          "parameter": "age",
+          "threshold": 65,
+          "patient1": {
+            "id": "THRESH_age_63",
+            "value": 63,
+            "sections": [
+              "interactions",
+              "names",
+              "indications",
+              "pharmacology"
+            ]
+          },
+          "patient2": {
+            "id": "THRESH_age_66",
+            "value": 66,
+            "sections": [
+              "indications",
+              "interactions",
+              "dosage",
+              "metabolism",
+              "pharmacology",
+              "names"
+            ]
+          },
+          "expected_behavior": {
+            "patient1_normal": true,
+            "patient2_triggered": true,
+            "threshold_crossed": true,
+            "should_trigger": true,
+            "expected_sections": [
+              "dosage",
+              "metabolism"
+            ]
+          },
+          "validation": {
+            "behavior_correct": true,
+            "sections_added": [
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "net_change": 2,
+            "issues": []
+          },
+          "passed": true
+        },
+        {
+          "test_name": "eGFR Impairment Threshold",
+          "parameter": "eGFR",
+          "threshold": 60,
+          "patient1": {
+            "id": "THRESH_eGFR_61 mL/min/1.73m2",
+            "value": 61.0,
+            "sections": [
+              "interactions",
+              "names",
+              "indications",
+              "pharmacology"
+            ]
+          },
+          "patient2": {
+            "id": "THRESH_eGFR_59 mL/min/1.73m2",
+            "value": 59.0,
+            "sections": [
+              "indications",
+              "interactions",
+              "dosage",
+              "metabolism",
+              "pharmacology",
+              "toxicity",
+              "names"
+            ]
+          },
+          "expected_behavior": {
+            "patient1_normal": true,
+            "patient2_triggered": true,
+            "threshold_crossed": true,
+            "should_trigger": true,
+            "expected_sections": [
+              "toxicity",
+              "dosage",
+              "metabolism"
+            ]
+          },
+          "validation": {
+            "behavior_correct": true,
+            "sections_added": [
+              "toxicity",
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "net_change": 3,
+            "issues": []
+          },
+          "passed": true
+        },
+        {
+          "test_name": "eGFR Both Severe",
+          "parameter": "no_change_expected",
+          "threshold": null,
+          "patient1": {
+            "id": "THRESH_eGFR_31 mL/min/1.73m2",
+            "sections": [
+              "indications",
+              "interactions",
+              "dosage",
+              "metabolism",
+              "pharmacology",
+              "toxicity",
+              "names"
+            ]
+          },
+          "patient2": {
+            "id": "THRESH_eGFR_29 mL/min/1.73m2",
+            "sections": [
+              "indications",
+              "interactions",
+              "dosage",
+              "metabolism",
+              "pharmacology",
+              "toxicity",
+              "names"
+            ]
+          },
+          "expected_behavior": {
+            "reason": "Both patients already have severe renal impairment",
+            "expected_minimal_change": true
+          },
+          "validation": {
+            "behavior_correct": true,
+            "sections_added": [],
+            "sections_removed": [],
+            "net_change": 0,
+            "issues": []
+          },
+          "passed": true
+        },
+        {
+          "test_name": "Creatinine in Complex Patient",
+          "parameter": "no_change_expected",
+          "threshold": null,
+          "patient1": {
+            "id": "THRESH_Creatinine_1.4 mg/dL",
+            "sections": [
+              "indications",
+              "dosage",
+              "metabolism",
+              "pharmacology",
+              "toxicity",
+              "names"
+            ]
+          },
+          "patient2": {
+            "id": "THRESH_Creatinine_1.6 mg/dL",
+            "sections": [
+              "indications",
+              "dosage",
+              "metabolism",
+              "pharmacology",
+              "toxicity",
+              "names"
+            ]
+          },
+          "expected_behavior": {
+            "reason": "Patient already has comprehensive analysis due to age + renal impairment",
+            "expected_minimal_change": true
+          },
+          "validation": {
+            "behavior_correct": true,
+            "sections_added": [],
+            "sections_removed": [],
+            "net_change": 0,
+            "issues": []
+          },
+          "passed": true
+        },
+        {
+          "test_name": "Combined Age+Renal Risk",
+          "parameter": "combined",
+          "threshold": null,
+          "patient1": {
+            "id": "COMBINED_LOW",
+            "value": "low_risk",
+            "sections": [
+              "names",
+              "indications",
+              "pharmacology"
+            ]
+          },
+          "patient2": {
+            "id": "COMBINED_HIGH",
+            "value": "high_risk",
+            "sections": [
+              "indications",
+              "dosage",
+              "metabolism",
+              "pharmacology",
+              "toxicity",
+              "names"
+            ]
+          },
+          "expected_behavior": {
+            "patient1_normal": true,
+            "patient2_triggered": true,
+            "threshold_crossed": true,
+            "should_trigger": true,
+            "expected_sections": [
+              "toxicity",
+              "dosage",
+              "metabolism"
+            ]
+          },
+          "validation": {
+            "behavior_correct": true,
+            "sections_added": [
+              "toxicity",
+              "dosage",
+              "metabolism"
+            ],
+            "sections_removed": [],
+            "net_change": 3,
+            "issues": []
+          },
+          "passed": true
+        }
+      ],
+      "clinical_guidelines": {
+        "age_elderly": 65,
+        "egfr_impaired": 60,
+        "egfr_severe": 30,
+        "creatinine_elevated": 1.5,
+        "weight_low": 50
+      },
+      "validation_summary": {
+        "tests_passed": 6,
+        "tests_failed": 0,
+        "threshold_accuracy": 100.0
+      }
+    },
+    "overall_summary": {
+      "total_tests": 12,
+      "total_passed": 12,
+      "total_failed": 0,
+      "overall_accuracy": 100.0,
+      "clinical_reasoning_accuracy": 100.0,
+      "threshold_validation_accuracy": 100.0,
+      "all_tests_passed": true
+    }
+  }
+}

@@ -1,17 +1,14 @@
 {
-  "patient_id": "P20251007",
-  "refined_query": "Allergies: Penicillin | Demographics: Sex: Male, Weight: 76kg, Age: 65",
+  "patient_id": "T006_UNITS",
+  "refined_query": "Medications: Insulin | Conditions: Diabetes, Kidney Disease | Allergies:  | Labs: Creatinine: 150 µmol/L, eGFR: 45 mL/min/1.73m², HbA1c: 8.5 mmol/mol | Demographics: Weight: 70kg, Age: 60",
   "section_selection_summary": {
-    "total_drugs": 4,
-    "total_sections_queried": 28,
+    "total_drugs": 1,
+    "total_sections_queried": 6,
     "sections_per_drug": {
-      "Metformin": 7,
-      "Warfarin": 7,
-      "Atorvastatin": 7,
-      "Amlodipine": 7
+      "Insulin": 6
     },
-    "standard_sections_would_be": 28,
-    "efficiency_gain_percent": 0.0,
+    "standard_sections_would_be": 7,
+    "efficiency_gain_percent": 14.3,
     "selection_rationale": {
       "base_sections": "names, pharmacology (always included)",
       "conditions_based": "indications added due to patient conditions",
@@ -23,541 +20,115 @@
   },
   "drug_data": [
     {
-      "drug_name": "Metformin",
+      "drug_name": "Insulin",
       "selected_sections": [
-        "metabolism",
-        "indications",
-        "dosage",
-        "interactions",
-        "names",
         "pharmacology",
-        "toxicity"
+        "metabolism",
+        "dosage",
+        "toxicity",
+        "indications",
+        "names"
       ],
       "sections": {
+        "pharmacology": [
+          {
+            "drug_id": "DB00071",
+            "section": "pharmacology",
+            "text": "Mechanism of Action: Insulin binds to the insulin receptor (IR), a heterotetrameric protein consisting of two extracellular alpha units and two transmembrane beta units. The binding of insulin to the alpha subunit of IR stimulates the tyrosine kinase activity intrinsic to the beta subunit of the receptor. The bound receptor is able to autophosphorylate and phosphorylate numerous intracellular substrates such as insulin receptor substrates (IRS) proteins, Cbl, APS, Shc and Gab 1. These activated proteins, in turn, lead to the activation of downstream signaling molecules including PI3 kinase and Akt. Akt regulates the activity of glucose transporter 4 (GLUT4) and protein kinase C (PKC) which play a critical role in metabolism. | Pharmacodynamics: Insulin is used in the treatment of type I and type II diabetes. The primary activity of insulin is the regulation of glucose metabolism. In muscle and other tissues (except the brain), insulin causes rapid transport of glucose and amino acids intracellularly. It also promotes anabolism, and inhibits protein catabolism. In the liver, insulin promotes the uptake and storage of glucose in the form of glycogen, inhibits gluconeogenesis, and promotes the conversion of excess glucose into fat.",
+            "similarity_score": 92.07
+          },
+          {
+            "drug_id": "DB00030",
+            "section": "pharmacology",
+            "text": "Mechanism of Action: The primary activity of insulin is the regulation of glucose metabolism. Insulin promotes glucose and amino acid uptake into muscle and adipose tissues, and other tissues except brain and liver. It also has an anabolic role in stimulating glycogen, fatty acid, and protein synthesis. Insulin inhibits gluconeogenesis in the liver.\r\nInsulin binds to the insulin receptor (IR), a heterotetrameric protein consisting of two extracellular alpha units and two transmembrane beta units. The binding of insulin to the alpha subunit of IR stimulates the tyrosine kinase activity intrinsic to the beta subunit of the receptor. The bound receptor is able to autophosphorylate and phosphorylate numerous intracellular substrates such as insulin receptor substrates (IRS) proteins, Cbl, APS, Shc and Gab 1. These activated proteins, in turn, lead to the activation of downstream signaling molecules including PI3 kinase and Akt. Akt regulates the activity of glucose transporter 4 (GLUT4) and protein kinase C (PKC) which play a critical role in metabolism and catabolism. | Pharmacodynamics: Insulin is a natural hormone produced by beta cells of the pancreas. In non-diabetic individuals, a basal level of insulin is supplemented with insulin spikes following meals. Postprandial insulin spikes are responsible for the metabolic changes that occur as the body transitions from a postabsorptive to absorptive state. Insulin promotes cellular uptake of glucose, particularly in muscle and adipose tissues, promotes energy storage via glycogenesis, opposes catabolism of energy stores, increases DNA replication and protein synthesis by stimulating amino acid uptake by liver, muscle and adipose tissue, and modifies the activity of numerous enzymes involved in glycogen synthesis and glycolysis. Insulin also promotes growth and is required for the actions of growth hormone (e.g. protein synthesis, cell division, DNA synthesis).",
+            "similarity_score": 91.78
+          },
+          {
+            "drug_id": "DB00046",
+            "section": "pharmacology",
+            "text": "Mechanism of Action: Insulin lispro binds to the insulin receptor (IR), a heterotetrameric protein consisting of two extracellular alpha units and two transmembrane beta units. The binding of insulin to the alpha subunit of IR stimulates the tyrosine kinase activity intrinsic to the beta subunit of the receptor. The bound receptor autophosphorylates and phosphorylates numerous intracellular substrates such as insulin receptor substrates (IRS) proteins, Cbl, APS, Shc and Gab 1. Activation of these proteins leads to the activation of downstream signaling molecules including PI3 kinase and Akt. Akt regulates the activity of glucose transporter 4 (GLUT4) and protein kinase C (PKC), both of which play critical roles in metabolism and catabolism. In humans, insulin is stored in the form of hexamers; however, only insulin monomers are able to interact with IR. Reversal of the proline and lysine residues at positions B28 and B29 of native insulin eliminates hydrophobic interactions and weakens some of the hydrogen bonds that contribute to the stability of the insulin dimers that comprise insulin hexamers. Hexamers of insulin lispro are produced in the presence of zinc and <i>m</i>-cresol. These weakly associated hexamers quickly dissociate upon subcutaneous injection and are absorbed as monomers through vascular endothelial cells. These properties give insulin lispro its fast-acting properties. | Pharmacodynamics: Insulin is a natural hormone produced by beta cells of the pancreas. In non-diabetic individuals, a basal level of insulin is supplemented with insulin spikes following meals. Increased insulin secretion following meals is responsible for the metabolic changes that occur as the body transitions from a postabsorptive to absorptive state. Insulin promotes cellular uptake of glucose, particularly in muscle and adipose tissues, promotes energy storage via glycogenesis, opposes catabolism of energy stores, increases DNA replication and protein synthesis by stimulating amino acid uptake by liver, muscle and adipose tissue, and modifies the activity of numerous enzymes involved in glycogen synthesis and glycolysis. Insulin also promotes growth and is required for the actions of growth hormone (e.g. protein synthesis, cell division, DNA synthesis). Insulin lispro is a rapid-acting insulin analogue used to mimic postprandial insulin spikes in diabetic individuals. The onset of action of insulin lispro is 10-15 minutes. Its activity peaks 60 minutes following subcutaneous injection and its duration of action is 4-5 hours. Compared to regular human insulin, insulin lispro  has a more rapid onset of action and a shorter duration of action. Insulin lispro is also shown to be equipotent to human insulin on a molar basis.  \r\n\r\nInsulin lispro has been shown to be equipotent to human insulin on a molar basis. One unit of insulin lispro has the same glucose-lowering effect as one unit of regular human insulin. Studies in normal volunteers and patients with diabetes demonstrated that insulin lispro has a more rapid onset of action and a shorter duration of activity than regular human insulin when given subcutaneously.[L47616]\r\n\r\nThe pharmacodynamics of a single 20 unit dose of insulin lispro at 200 units/mL (HUMALOG U-200) administered subcutaneously were compared to the pharmacodynamics of a single 20 unit dose of insulin lispro at 100 units/mL (HUMALOG U-100) administered subcutaneously in a euglycemic clamp study enrolling healthy subjects. In this study, the overall, maximum, and time to maximum glucose lowering effect were similar between HUMALOG U-200 and HUMALOG U-100. The mean area under the glucose infusion rate curves (measure of overall pharmacodynamic effect) were 125 g and 126 g for HUMALOG U-200 and HUMALOG U-100, respectively. The maximum glucose infusion rate was 534 mg/min and 559 mg/min and the corresponding median time (min, max) to maximum effect were 2.8 h (0.5 h – 6.3 h) and 2.4 h (0.5 h – 4.7 h) for HUMALOG U-200 and HUMALOG U-100, respectively.[L47616]",
+            "similarity_score": 91.51
+          }
+        ],
         "metabolism": [
           {
-            "drug_id": "DB00406",
+            "drug_id": "DB00071",
             "section": "metabolism",
-            "text": "Metabolism: Primarily hepatic, mostly demethylation",
-            "similarity_score": 91.3
+            "text": "Metabolism: Insulin is predominantly cleared by metabolic degradation via a receptor-mediated process.",
+            "similarity_score": 93.93
           },
           {
-            "drug_id": "DB03783",
+            "drug_id": "Unknown Drug",
             "section": "metabolism",
-            "text": "Metabolism: Metabolised in the body to paracetamol.",
-            "similarity_score": 91.24
+            "text": "Absorption: It has been reported that administration of 10-15% of intravenous invert sugar solution is rapidly absorbed in the intestine and distributed in blood without exceeding the renal threshold.[A32124] The absorption of invert sugar happens mainly as monosaccharides. Glucose is absorbed into the portal vein by the transporter GLUT2 while fructose is absorbed by the transporter GLUT5.[A32126] | Metabolism: The metabolism of invert sugar and other fructose-glucose sweeteners is not meaningfully different. Once absorbed, the fructose monosaccharides are taken up by the liver and bypass a key step regulatory step in glycolysis.[A32126] Both of the monosaccharides first step metabolism is marked by its phosphorylation to glucose-6-phosphate by glucokinase or fructose-1-phosphate by fructokinase. After this step, the glycolysis continues its pathway until the obtention of pyruvic acid.[T129] The metabolism of fructose is more rapid than the one of glucose and thus, it is possible to administer at the same speed than a glucose dose correspondent to 55% of the invert sugar dose.[T130] | Half-life: The glucose half-life following intravenous administration of invert sugar is of approximately 30 min. In the same report, the half-life of fructose after the intravenous administration is reported to be 16 min.[A19407]",
+            "similarity_score": 90.6
           },
           {
-            "drug_id": "DB00429",
+            "drug_id": "Unknown Drug",
             "section": "metabolism",
-            "text": "Metabolism: Metabolized in the lungs and liver. Metabolites are excreted in urine.",
-            "similarity_score": 91.14
+            "text": "Absorption: In patients with type 1 diabetes, after 8 days of once-daily subcutaneous dosing with 0.4 U/kg, maximum insulin degludec concentrations of 4472 pmol/L were attained at a median of 9 hours (t<sub>max</sub>).[L42400] After the first dose, the median onset of appearance was around one hour. The glucose-lowering effect lasted at least 42 hours after the last of 8 once-daily injections. Insulin degludec concentration reaches steady-state levels after 3-4 days.[L42400] | Metabolism: All insulin degludec metabolites are inactive.[L42400] The liver and kidney play the major role in metabolizing insulin.[A231654]However, while the liver predominantly metabolizes endogenous insulin, exogenous insulin is primarily metabolized due to the kidney since it is not directly delivered into the portal system.[A231654] | Half-life: The half-life after subcutaneous administration is determined primarily by the rate of absorption from the subcutaneous tissue. On average, the half-life at a steady state is approximately 25 hours independent of dose.[L42400] | Clearance: The mean apparent clearance of insulin degludec is 0.03 L/kg (2.1 L/h in 70 kg individuals) after a single subcutaneous dose of 0.4 units/kg.[L42400] | Protein Binding: The affinity of insulin degludec to serum albumin corresponds to a plasma protein binding of >99% in human plasma.[L42400] The results of the in vitro protein binding studies demonstrate that there is no clinically relevant interaction between insulin degludec and other protein-bound drugs.[L42400]",
+            "similarity_score": 90.43
+          }
+        ],
+        "dosage": [],
+        "toxicity": [
+          {
+            "drug_id": "Unknown Drug",
+            "section": "toxicity",
+            "text": "Toxicity: Invert sugar is a generally accepted safe substance and it does not present toxic effects. Do not administer invert sugar in patients with the rare hereditary problems of fructose intolerance, glucose-galactose malabsorption or sucrose-isomaltase insufficiency. It is also recommended to take precautions in patients that present diabetes mellitus.[L1691]",
+            "similarity_score": 92.84
+          },
+          {
+            "drug_id": "DB00034",
+            "section": "toxicity",
+            "text": "Toxicity: Interferon alfa-2 may cause serious adverse effects such as anemia; autoimmune diseases, including vasculitis, arthritis, hemolytic anemia, and erythematosus syndrome; cardiotoxicity; hepatotoxicity; hyperthyroidism or hypothyroidism; transient ischemic attacks; leukopenia; neurotoxicity; peripheral neuropathy; and thrombocytopenia. Some lesser side effects that may not need medical attention include blurred vision, change in taste or metallic taste, cold sores or stomatitis, diarrhea, dizziness, dry mouth, dry skin or itching, flu-like syndrome, increased sweating, leg cramps, loss of appetite, nausea or vomiting, skin rash, unusual tiredness, weight loss, and partial loss of hair.",
+            "similarity_score": 91.56
+          },
+          {
+            "drug_id": "Unknown Drug",
+            "section": "toxicity",
+            "text": "Toxicity: Severe hypoglycemic reactions with coma, seizure, or other neurological impairment.",
+            "similarity_score": 91.44
           }
         ],
         "indications": [
           {
+            "drug_id": "DB00071",
+            "section": "indications",
+            "text": "Indications: For the treatment of type I and II diabetes mellitus.",
+            "similarity_score": 94.23
+          },
+          {
+            "drug_id": "DB00030",
+            "section": "indications",
+            "text": "Indications: Human insulin is indicated to improve glycemic control in adults and pediatric patients with diabetes mellitus.",
+            "similarity_score": 94.17
+          },
+          {
             "drug_id": "Unknown Drug",
             "section": "indications",
-            "text": "Indications: Investigated for use/treatment in diabetes mellitus type 1.",
-            "similarity_score": 93.05
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: Investigated for use/treatment in metabolic disease.",
-            "similarity_score": 93.02
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: Investigated for use/treatment in diabetes mellitus (type 2).",
-            "similarity_score": 92.99
-          }
-        ],
-        "dosage": [],
-        "interactions": [
-          {
-            "drug_id": "DB00331",
-            "section": "interactions",
-            "text": "Drug Interactions: Pegvisomant: The risk or severity of hypoglycemia can be increased when Pegvisomant is combined with Metformin. | Dofetilide: The serum concentration of Dofetilide can be increased when it is combined with Metformin. | Trospium: The serum concentration of Trospium can be decreased when it is combined with Metformin. | Ranolazine: The serum concentration of Metformin can be increased when it is combined with Ranolazine. | Topiramate: The risk or severity of lactic acidosis can be increased when Topiramate is combined with Metformin. | Bupropion: The excretion of Metformin can be decreased when combined with Bupropion. | Dalfampridine: The serum concentration of Dalfampridine can be increased when it is combined with Metformin. | Dolutegravir: The serum concentration of Metformin can be increased when it is combined with Dolutegravir. | Glycopyrronium: The serum concentration of Metformin can be increased when it is combined with Glycopyrronium. | Lamotrigine: The serum concentration of Metformin can be increased when it is combined with Lamotrigine.",
-            "similarity_score": 91.55
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "interactions",
-            "text": "Drug Interactions: Metoclopramide: The risk or severity of adverse effects can be increased when Metoclopramide is combined with Trimetazidine.",
-            "similarity_score": 91.4
-          },
-          {
-            "drug_id": "DB00134",
-            "section": "interactions",
-            "text": "Drug Interactions: Levodopa: The therapeutic efficacy of Levodopa can be decreased when used in combination with Methionine.",
-            "similarity_score": 91.18
+            "text": "Indications: Insulin aspart is indicated to improve glycemic control in adults and children with diabetes mellitus.[L12273,L42550]",
+            "similarity_score": 94.07
           }
         ],
         "names": [
           {
-            "drug_id": "DB00331",
+            "drug_id": "DB00030",
             "section": "names",
-            "text": "Drug: Metformin, Synonyms: 1,1-Dimethylbiguanide, Dimethylbiguanid, Metformin, Metformina, Metformine, ID: DB00331",
-            "similarity_score": 94.71
+            "text": "Drug: Insulin human, Synonyms: High molecular weight insulin human, Human insulin, human insulin (rDNA), Insulin (human), Insulin human, ID: DB00030",
+            "similarity_score": 93.94
           },
           {
-            "drug_id": "Unknown Drug",
+            "drug_id": "DB00071",
             "section": "names",
-            "text": "Drug: Metformin C-11, Synonyms: [11C]-metformin, 11C-METFORMIN, Carbon C 11 Metformin, Carbon-11 Metformin, METFORMIN C-11, ID: Unknown Drug",
-            "similarity_score": 92.64
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "names",
-            "text": "Drug: Carbutamide, Synonyms: Carbutamida, Carbutamide, Carbutamidum, ID: Unknown Drug",
-            "similarity_score": 92.48
-          }
-        ],
-        "pharmacology": [
-          {
-            "drug_id": "DB00331",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Metformin's mechanisms of action are unique from other classes of oral antihyperglycemic drugs. Metformin decreases blood glucose levels by decreasing hepatic glucose production (also called gluconeogenesis), decreasing the intestinal absorption of glucose, and increasing insulin sensitivity by increasing peripheral glucose uptake and utilization.[L12207] It is well established that metformin inhibits mitochondrial complex I activity, and it has since been generally postulated that its potent antidiabetic effects occur through this mechanism.[A36534, A36557]   The above processes lead to a decrease in blood glucose, managing type II diabetes and exerting positive effects on glycemic control.\r\n\r\nAfter ingestion, the organic cation transporter-1 (OCT1) is responsible for the uptake of metformin into hepatocytes (liver cells). As this drug is positively charged, it accumulates in cells and in the mitochondria because of the membrane potentials across the plasma membrane as well as the mitochondrial inner membrane. Metformin inhibits mitochondrial complex I, preventing the production of mitochondrial ATP leading to increased cytoplasmic ADP:ATP and AMP:ATP ratios.[A36534] These changes activate AMP-activated protein kinase (AMPK), an enzyme that plays an important role in the regulation of glucose metabolism.[A176348] Aside from this mechanism, AMPK can be activated by a lysosomal mechanism involving other activators.  Following this process, increases in AMP:ATP ratio also inhibit _fructose-1,6-bisphosphatase_ enzyme, resulting in the inhibition of gluconeogenesis, while also inhibiting _adenylate cyclase_ and decreasing the production of cyclic adenosine monophosphate (cAMP),[A36534] a derivative of ATP used for cell signaling [A176351]. Activated AMPK phosphorylates two isoforms of acetyl-CoA carboxylase enzyme, thereby inhibiting fat synthesis and leading to fat oxidation, reducing hepatic lipid stores and increasing liver sensitivity to insulin.[A36534] \r\n\r\nIn the intestines, metformin increases anaerobic glucose metabolism in enterocytes (intestinal cells), leading to reduced net glucose uptake and increased delivery of lactate to the liver. Recent studies have also implicated the gut as a primary site of action of metformin and suggest that the liver may not be as important for metformin action in patients with type 2 diabetes. Some of the ways metformin may play a role on the intestines is by promoting the metabolism of glucose by increasing glucagon-like peptide I (GLP-1) as well as increasing gut utilization of glucose.[A36534] \r\n\r\nIn addition to the above pathway, the mechanism of action of metformin may be explained by other ways, and its exact mechanism of action has been under extensive study in recent years.[A36535, A36554, A36555, A36557] | Pharmacodynamics: **General effects**\r\n\r\nInsulin is an important hormone that regulates blood glucose levels.[T514] Type II diabetes is characterized by a decrease in sensitivity to insulin, resulting in elevations in blood glucose when the pancreas can no longer compensate. In patients diagnosed with type 2 diabetes, insulin is unable to exert adequate effects on tissues and cells (i.e. insulin resistance)[T514] and insulin deficiency may also be present.[L5753]\r\n\r\nMetformin reduces hepatic production of glucose, decreases the intestinal absorption of glucose, and enhances insulin sensitivity by increasing both peripheral glucose uptake and utilization. In contrast with drugs of the sulfonylurea class, which lead to hyperinsulinemia, the secretion of insulin is unchanged with metformin use.[L12207]\r\n\r\n**Effect on fasting plasma glucose (FPG) and Glycosylated hemoglobin (HbA1c)**\r\n\r\nHbA1c is an important periodic measure of glycemic control used to monitor diabetic patients. Fasting plasma glucose is also a useful and important measure of glycemic control. In a 29-week clinical trial of subjects diagnosed with type II diabetes, metformin decreased the fasting plasma glucose levels by an average of 59 mg/dL from baseline, compared to an average increase of 6.3 mg/dL from baseline in subjects taking a placebo.[L12207]  Glycosylated hemoglobin (HbA1c) was decreased by about 1.4% in subjects receiving metformin, and increased by 0.4% in subjects receiving placebo only.[L12207]",
-            "similarity_score": 92.16
-          },
-          {
-            "drug_id": "DB00914",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Phenformin binds to the AMP-activated protein kinase (AMPK). AMPK is an ultra-sensitive cellular energy sensor that monitors energy consumption and down-regulates ATP-consuming processes when activated. The biguanide phenformin has been shown to independently decrease ion transport processes, influence cellular metabolism and activate AMPK. Phenformin's hypoglycemic activity is related the effect it has in activating AMPK and fooling insulin sensitive cells into thinking that insulin levels are low and causing the body to use glucose as if in a state of low caloric consumption. This drug also seems to inhibit several varients of ATP-sensitive potassium channels (namely the receptor subtype Kir6.1). | Pharmacodynamics: Used to treat diabetes, phenformin is a biguanide (contains 2 guanidino groups) hypoglycemic agent with actions and uses similar to those of metformin (Glucophage). Both drugs work by (1) decreasing the absorption of glucose by the intestines, (2) decreasing the production of glucose in the liver, and by (3) increasing the body's ability to use insulin more effectively. More specifically, phenformin improves glycemic control by improving insulin sensitivity. Phenformin is generally considered to be associated with an unacceptably high incidence of actic acidosis. In general biguanides should be used only in stable type II diabetics who are free of liver, kidney and cardiovascular problems and who cannot be controlled with diet.",
-            "similarity_score": 91.25
-          },
-          {
-            "drug_id": "DB00264",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Metoprolol is a beta-1-adrenergic receptor inhibitor specific to cardiac cells with negligible effect on beta-2 receptors. This inhibition decreases cardiac output by producing negative chronotropic and inotropic effects without presenting activity towards membrane stabilization nor intrinsic sympathomimetics.[A175141] | Pharmacodynamics: Administration of metoprolol in normal subjects is widely reported to produce a dose-dependent reduction on heart rate and cardiac output.[A175141] This effect is generated due to a decreased cardiac excitability, cardiac output, and myocardial oxygen demand.[T76] In the case of arrhythmias, metoprolol produces its effect by reducing the slope of the pacemaker potential as well as suppressing the rate of atrioventricular conduction.[T451]\r\n\r\nThe Metoprolol Atherosclerosis Prevention in Hypertensives (MAPHY) trial showed a significant improvement in sudden cardiac death and myocardial infarction when patients were given with metoprolol as compared with diuretics. As well, in clinical trials performed in 1990, metoprolol reduces mortality and re-infarction in 17% of the individuals when administered chronically after an episode of myocardial infarction.[A175141]",
-            "similarity_score": 90.34
-          }
-        ],
-        "toxicity": [
-          {
-            "drug_id": "DB00331",
-            "section": "toxicity",
-            "text": "Toxicity: **Metformin (hydrochloride) toxicity data**: \r\n\r\nOral LD50 (rat): 1 g/kg; Intraperitoneal LD50 (rat): 500 mg/kg; Subcutaneous LD50 (rat): 300 mg/kg; Oral LD50 (mouse): 1450 mg/kg; Intraperitoneal LD50 (mouse): 420 mg/kg; Subcutaneous LD50 (mouse): 225 mg/kg.[L40283,L50211]\r\n\r\n**A note on lactic acidosis**\r\n\r\nMetformin decreases liver uptake of lactate, thereby increasing lactate blood levels which may increase the risk of lactic acidosis.[L40243] There have been reported postmarketing cases of metformin-associated lactic acidosis, including some fatal cases. Such cases had a subtle onset and were accompanied by nonspecific symptoms including malaise, myalgias, abdominal pain, respiratory distress, or increased somnolence. In certain cases, hypotension and resistant bradyarrhythmias have occurred with severe lactic acidosis.[L40243] Metformin-associated lactic acidosis was characterized by elevated blood lactate concentrations (>5 mmol/L), anion gap acidosis (without evidence of ketonuria or ketonemia), as well as an increased lactate:pyruvate ratio; metformin plasma levels were generally >5 mcg/mL.[L40243]\r\n\r\nRisk factors for metformin-associated lactic acidosis include renal impairment, concomitant use of certain drugs (e.g. carbonic anhydrase inhibitors such as topiramate), age 65 years old or greater, having a radiological study with contrast, surgery and other procedures, hypoxic states (e.g., acute congestive heart failure), excessive alcohol intake, and hepatic impairment.[L40243]\r\n\r\n**A note on renal function**\r\n\r\nIn patients with decreased renal function, the plasma and blood half-life of metformin is prolonged and the renal clearance is decreased.[L40243]\r\n\r\nMetformin should be avoided in those with severely compromised renal function (creatinine clearance < 30 ml/min), acute/decompensated heart failure, severe liver disease and for 48 hours after the use of iodinated contrast dyes due to the risk of lactic acidosis.[L40243] Lower doses should be used in the elderly and those with decreased renal function. Metformin decreases fasting plasma glucose, postprandial blood glucose and glycosolated hemoglobin (HbA1c) levels, which are reflective of the last 8-10 weeks of glucose control. Metformin may also have a positive effect on lipid levels. \r\n\r\n**A note on hypoglycemia**\r\n\r\n When used alone, metformin does not cause hypoglycemia, however, it may potentiate the hypoglycemic effects of sulfonylureas and insulin when they are used together.[L40243]\r\n\r\n**Use in pregnancy** \r\n\r\nAvailable data from post-marketing studies have not indicated a clear association of metformin with major birth defects, miscarriage, or adverse maternal or fetal outcomes when metformin was ingested during pregnancy. Despite this, the abovementioned studies cannot definitively establish the absence of any metformin-associated risk due to methodological limitations, including small sample size and inconsistent study groups.[L40243]\r\n\r\n**Use in nursing**\r\n\r\nA limited number of published studies indicate that metformin is present in human milk. There is insufficient information to confirm the effects of metformin on the nursing infant and no available data on the effects of metformin on the production of milk. The developmental and health benefits of breastfeeding should be considered as well as the mother’s clinical need for metformin and any possible adverse effects on the nursing child.[L40243]",
-            "similarity_score": 93.04
-          },
-          {
-            "drug_id": "DB01000",
-            "section": "toxicity",
-            "text": "Toxicity: Symptoms of overdose include severe diarrhea, nausea and vomiting.",
-            "similarity_score": 91.36
-          },
-          {
-            "drug_id": "DB00731",
-            "section": "toxicity",
-            "text": "Toxicity: An overdose may result in an exaggerated glucose-lowering effect with the development of hypoglycemic symptoms.",
-            "similarity_score": 91.27
-          }
-        ]
-      }
-    },
-    {
-      "drug_name": "Warfarin",
-      "selected_sections": [
-        "metabolism",
-        "indications",
-        "dosage",
-        "interactions",
-        "names",
-        "pharmacology",
-        "toxicity"
-      ],
-      "sections": {
-        "metabolism": [
-          {
-            "drug_id": "DB00682",
-            "section": "metabolism",
-            "text": "Absorption: Completely absorbed from the GI tract. The mean Tmax for warfarin sodium tablets is 4 hours.[label,L6616,A2460] | Metabolism: Metabolism of warfarin is both stereo- and regio-selective.[A2460] The major metabolic pathway is oxidation to various hydroxywarfarins, comprising 80-85% of the total metabolites. CYP2C9 is the major enzyme catalyzing the 6- and 7-hydroxylation of S-warfarin while 4'-hydroxylation occurs through CYP2C18 with minor contributions from CYP2C19. R-warfarin is metabolized to 4'-hydroxywarfarin by CYP2C8 with some contirbuting by CYP2C19, 6- and 8-hydroxywarfarin by CYP1A2 and CYP2C19, 7-hydroxywarfarin by CYP1A2 and CYP2C8, and lastly to 10-hydroxywarfarin by CYP3A4. The 10-hydroxywarfarin metabolite as well as a benzylic alcohol metabolite undergo an elimination step to form dehydrowarfarin. The minor pathway of metabolism is the reduction of the ketone group to warfarin alcohols, comprising 20% of the metabolites. Limited conjugation occurs with sulfate and gluronic acid groups but these metabolites have only been confirmed for R-hydroxywarfarins. | Half-life: R-warfarin is cleared more slowly than S-warfarin, at about half the rate.[label] T<sub>1/2</sub> for R-warfarin is 37-89 hours. T<sub>1/2</sub> for S-warfarin is 21-43 hours. | Clearance: Clearance of warfarin varies depending on CYP2C9 genotype.[label,L6616] The \\*2 and \\*3 alleles appear in the Caucasian population at frequencies of 11% and 7% and are known to reduce clearance warfarin. Additional clearance reducing genotypes include the \\*5, \\*6, \\*9 and \\*11 alleles. Genotypes for which population clearance estimates have been found are listed below.\r\n\r\n\\*1/\\*1 = 0.065 mL/min/kg\r\n\r\n\\*1/\\*2, \\*1/\\*3 = 0.041 mL/min/kg\r\n\r\n\\*2/\\*2, \\*2/\\*3, \\*3/\\*3 = 0.020 mg/min/kg | Protein Binding: 99% bound primarily to albumin.[label,L6616,A2460]",
-            "similarity_score": 93.04
-          },
-          {
-            "drug_id": "DB00769",
-            "section": "metabolism",
-            "text": "Metabolism: Primarily hepatic via CYP3A4",
-            "similarity_score": 92.67
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "metabolism",
-            "text": "Metabolism: Metabolised primarily by the CYP3A4 system",
-            "similarity_score": 92.64
-          }
-        ],
-        "indications": [
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: Investigated for use/treatment in atrial fibrillation, cardiovascular disorders, thrombosis, and venous thromboembolism.",
-            "similarity_score": 92.52
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: Investigated for use/treatment in thrombosis, venous thromboembolism, strokes, heart disease, and atrial fibrillation.",
-            "similarity_score": 92.41
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: Investigated for use/treatment in arrhythmia and atrial fibrillation.",
-            "similarity_score": 92.33
-          }
-        ],
-        "dosage": [],
-        "interactions": [
-          {
-            "drug_id": "DB00682",
-            "section": "interactions",
-            "text": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and bruising can be increased when Warfarin is combined with Ursodeoxycholic acid. | Glycochenodeoxycholic Acid: The risk or severity of bleeding and bruising can be increased when Warfarin is combined with Glycochenodeoxycholic Acid. | Cholic Acid: The risk or severity of bleeding and bruising can be increased when Warfarin is combined with Cholic Acid. | Glycocholic acid: The risk or severity of bleeding and bruising can be increased when Warfarin is combined with Glycocholic acid. | Deoxycholic acid: The risk or severity of bleeding and bruising can be increased when Warfarin is combined with Deoxycholic acid. | Taurocholic acid: The risk or severity of bleeding and bruising can be increased when Warfarin is combined with Taurocholic acid.",
-            "similarity_score": 91.64
-          },
-          {
-            "drug_id": "DB14055",
-            "section": "interactions",
-            "text": "Drug Interactions: Apixaban: Apixaban may increase the anticoagulant activities of (S)-Warfarin. | Dabigatran etexilate: Dabigatran etexilate may increase the anticoagulant activities of (S)-Warfarin. | Dasatinib: The risk or severity of bleeding and hemorrhage can be increased when Dasatinib is combined with (S)-Warfarin. | Deferasirox: The risk or severity of gastrointestinal bleeding can be increased when (S)-Warfarin is combined with Deferasirox. | Ursodeoxycholic acid: The risk or severity of bleeding and bruising can be increased when (S)-Warfarin is combined with Ursodeoxycholic acid. | Glycochenodeoxycholic Acid: The risk or severity of bleeding and bruising can be increased when (S)-Warfarin is combined with Glycochenodeoxycholic Acid. | Cholic Acid: The risk or severity of bleeding and bruising can be increased when (S)-Warfarin is combined with Cholic Acid. | Glycocholic acid: The risk or severity of bleeding and bruising can be increased when (S)-Warfarin is combined with Glycocholic acid. | Deoxycholic acid: The risk or severity of bleeding and bruising can be increased when (S)-Warfarin is combined with Deoxycholic acid. | Taurocholic acid: The risk or severity of bleeding and bruising can be increased when (S)-Warfarin is combined with Taurocholic acid.",
-            "similarity_score": 91.58
-          },
-          {
-            "drug_id": "DB03209",
-            "section": "interactions",
-            "text": "Drug Interactions: Allopurinol: The therapeutic efficacy of Oteracil can be decreased when used in combination with Allopurinol.",
-            "similarity_score": 91.33
-          }
-        ],
-        "names": [
-          {
-            "drug_id": "Unknown Drug",
-            "section": "names",
-            "text": "Drug: Formocortal, Synonyms: Formocortal, ID: Unknown Drug",
-            "similarity_score": 91.69
-          },
-          {
-            "drug_id": "DB01076",
-            "section": "names",
-            "text": "Drug: Atorvastatin, Synonyms: Atorvastatin, atorvastatina, atorvastatine, atorvastatinum, ID: DB01076",
-            "similarity_score": 91.64
+            "text": "Drug: Insulin pork, Synonyms: Insulin (pork), Insulin porcine, Insulin purified porcine, Insulin purified pork, Insulin, porcine, ID: DB00071",
+            "similarity_score": 93.87
           },
           {
             "drug_id": "Unknown Drug",
             "section": "names",
-            "text": "Drug: Cloperastine, Synonyms: Cloperastina, Cloperastine, ID: Unknown Drug",
-            "similarity_score": 91.57
-          }
-        ],
-        "pharmacology": [
-          {
-            "drug_id": "Unknown Drug",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Edoxaban is a selective inhibitor of factor Xa, a serine endopeptidase of the clotting cascade required for cleavage of prothrombin into thrombin. | Pharmacodynamics: Administration of edoxaban results in prolongation of clotting time tests such as aPTT (activated partial thromboplastin time), PT (prothrombin time), and INR (international normalized ratio).",
-            "similarity_score": 90.12
-          },
-          {
-            "drug_id": "DB00682",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Warfarin is a [vitamin K] antagonist which acts to inhibit the production of vitamin K by vitamin K epoxide reductase.[label,A179221,T116] The reduced form of vitamin K, vitamin KH<sub>2</sub> is a cofactor used in the γ-carboxylation of coagulation factors VII, IX, X, and thrombin. Carboxylation induces a conformational change allowing the factors to bind Ca<sup>2+</sup> and to phospholipid surfaces. Uncarboxylated factors VII, IX, X, and thrombin are biologically inactive and therefore serve to interrupt the coagulation cascade. The endogenous anticoagulation proteins C and S also require  γ-carboxylation to function. This is particularly true in the case of thrombin which must be activated in order to form a thrombus. vitamin KH<sub>2</sub> is converted to vitamin K epoxide as part of the γ-carboxylation reaction catalyzed by γ-glutamyl carboxylase. Vitamin K epoxide is then converted to vitamin K<sub>1</sub> by vitamin K epoxide reductase then back to vitamin KH<sub>2</sub> by vitamin K reductase. Warfarin binds to vitamin K epoxide reductase complex subunit 1 and irreversibly inhibits the enzyme thereby stopping the recycling of vitamin K by preventing the conversion of vitamin K epoxide to vitamin K<sub>1</sub>. This process creates a hypercoagulable state for a short time as proteins C and S degrade first with half lives of 8 and 24 hours, with the exception of factor VII which has a half life of 6 hours.[A179221] Factors IX, X, and finally thrombin degrade later with half lives of 24, 36, and 50 hours resulting in a dominant anticoagulation effect.[A179221] In order to reverse this anticoagulation vitamin K must be supplied, either exogenously or by removal of the vitamin K epoxide reductase inhibition, and time allowed for new coagulation factors to be synthesized.[label,A179221,T116] It takes approximately 2 days for new coagulation factors to be synthesized in the liver. Vitamin K<sub>2</sub>, functionally identical to vitamin K<sub>1</sub>, is synthesized by gut bacteria leading to interactions with antibiotics as elimination of these bacteria can reduce vitamin K<sub>2</sub supply and result in a greater anticoagulation effect.[T116] | Pharmacodynamics: Warfarin is an anticoagulant, as such it disrupts the coagulation cascade to reduce frequency and extent of thrombus formation.[label,L6616] In patients with deep vein thrombosis or atrial fibrillation there is an increased risk of thrombus formation due to the reduced movement of blood.[T622] For patients with cardiac valve disease or valve replacements this increased coagulability is due to tissue damage. Thrombi due to venous thrombosis can travel to the lungs and become pulmonary emboli, blocking circulation to a portion of lung tissue. Thrombi which form in the heart can travel to the brain and cause ischemic strokes. Prevention of these events is the primary goal of warfarin therapy.\r\n\r\nLimitation of thrombus formation is also a source of adverse effects. In patients with atheroscelotic plaques rupture typically results in thrombus formation.[A179212] When these patients are anticoagulated plaque rupture can allow the escape of cholesterol from the lipid core in the form of atheroemboli or cholesterol microemboli. These emboli are smaller than thrombi and block smaller vessels, usually less than 200 μm in diameter. The consequences of this are varied and depend on the location of the blockage. Effects include visual disturbances, acute kidney injury or worsening of chronic kidney disease, central nervous system ischemia, and purple or blue toe syndrome.[label,A179212] Blue toe syndrome can be reversed if it has not progressed to tissue necrosis but the other effects of microemboli are often permanent.\r\n\r\nAntocoagulation appears to mediate warfarin-related nephropathy, a seemingly spontaneous kidney injury or worsening of chronic kidney disease associated with warfarin therapy.[A179215] Nephropathy in this case appears to be due to increased passage of red blood cells through the glomerulus and subsequent blockage of renal tubules with red blood cell casts. This is worsened or possibly triggered by pre-existing kidney damage. Increased risk of warfarin-related nephropathy occurs at INRs over 3.0 but risk does not increase as a function of INR beyond this point.\r\n\r\nWarfarin has been linked to the development of calciphylaxis.[label] This is thought to be due to warfarin's inhibition of [vitamin K](VKA) recycling as VKA is needed for the carboxylation of matrix Gla protein.[A179218] This protein is an anti-calcification factor and its inhibition through preventing the carboxylation step in its production leads to a shift in calcification balance in favor of calciphylaxis. \r\n\r\nTissue necrosis can occur early on in warfarin therapy.[label] This is attributable to half lives of the clotting factors impacted by inhibition of vitamin K recycling.[label,A179221] Proteins C and S are anticoagulation factors with half lives of 8 and 24 hours respectively. The coagulation factors IX, X, VII, and thrombin (factor II) have half lives of 24, 36, 6, and 50 hours respectively. This means proteins C and S are inactivated sooner than pro-coagulation proteins, with the exception of factor VII, resulting in a pro-thrombotic state for the first few days of therapy. Thrombi which form in this time period can occlude arterioles in various locations, blocking blood flow and causing tissue necrosis due to ischemia.",
-            "similarity_score": 90.01
-          },
-          {
-            "drug_id": "DB01125",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Like phenindione, to which it is related chemically, anisindione exercises its therapeutic action by reducing the prothrombin activity of the blood. By inhibiting the vitamin K&ndash;mediated gamma-carboxylation of precursor proteins, the formation of active procoagulation factors II, VII, IX, and X, as well as the anticoagulant proteins C and S is prevented. Anisindione has no direct thrombolytic effect and does not reverse ischemic tissue damage, although it may limit extension of existing thrombi and prevent secondary thromboembolic complications. | Pharmacodynamics: Anisindione is a synthetic anticoagulant and an indanedione derivative. It is prescribed only if you cannot take coumarin-type anticoagulants such as coumadin as anisindione is a powerful drug with serious potential side effects. Anticoagulants decrease the clotting ability of the blood and therefore help to prevent harmful clots from forming in the blood vessels. These medicines are sometimes called blood thinners, although they do not actually thin the blood. They also will not dissolve clots that already have formed, but they may prevent the clots from becoming larger and causing more serious problems.",
-            "similarity_score": 90.01
-          }
-        ],
-        "toxicity": [
-          {
-            "drug_id": "DB00569",
-            "section": "toxicity",
-            "text": "Toxicity: As with other anticoagulants, the main concern is increased bleed risk. The risk of hemorrhage may increase with decreased renal function, body mass less than 50 kg, and moderate to severe hepatic function.",
-            "similarity_score": 92.48
-          },
-          {
-            "drug_id": "DB00511",
-            "section": "toxicity",
-            "text": "Toxicity: Toxicity includes ventricular tachycardia or ventricular fibrillation, or progressive bradyarrhythmias, or heart block. LD50 = 7.8 mg/kg (orally in mice).",
-            "similarity_score": 92.38
-          },
-          {
-            "drug_id": "DB01078",
-            "section": "toxicity",
-            "text": "Toxicity: Symptoms of overdose include ventricular tachycardia, ventricular fibrillation, progressive bradyarrhythmias, or heart block.",
-            "similarity_score": 91.8
-          }
-        ]
-      }
-    },
-    {
-      "drug_name": "Atorvastatin",
-      "selected_sections": [
-        "metabolism",
-        "indications",
-        "dosage",
-        "interactions",
-        "names",
-        "pharmacology",
-        "toxicity"
-      ],
-      "sections": {
-        "metabolism": [
-          {
-            "drug_id": "Unknown Drug",
-            "section": "metabolism",
-            "text": "Metabolism: Metabolised primarily by the CYP3A4 system",
-            "similarity_score": 92.1
-          },
-          {
-            "drug_id": "DB01076",
-            "section": "metabolism",
-            "text": "Absorption: Atorvastatin presents a dose-dependent and non-linear pharmacokinetic profile.[A177436] It is very rapidly absorbed after oral administration. After the administration of a dose of 40 mg, its peak plasma concentration of 28 ng/ml is reached 1-2 hours after initial administration with an AUC of about 200 ng∙h/ml.[A177478] Atorvastatin undergoes extensive first-pass metabolism in the wall of the gut and the liver, resulting in an absolute oral bioavailability of 14%.[A177397] Plasma atorvastatin concentrations are lower (approximately 30% for Cmax and AUC) following evening drug administration compared with morning. However, LDL-C reduction is the same regardless of the time of day of drug administration.[F4670]\r\n\r\nAdministration of atorvastatin with food results in prolonged Tmax and a reduction in Cmax and AUC.[A177415]\r\n\r\nBreast Cancer Resistance Protein (BCRP) is a membrane-bound protein that plays an important role in the absorption of atorvastatin.[A181460] Evidence from pharmacogenetic studies of c.421C>A single nucleotide polymorphisms (SNPs) in the gene for BCRP has demonstrated that individuals with the 421AA genotype have reduced functional activity and 1.72-fold higher AUC for atorvastatin compared to study individuals with the control 421CC genotype. This has important implications for the variation in response to the drug in terms of efficacy and toxicity, particularly as the BCRP c.421C>A polymorphism occurs more frequently in Asian populations than in Caucasians.[A181478, A181487] Other statin drugs impacted by this polymorphism include [fluvastatin], [simvastatin], and [rosuvastatin].[A181478]\r\n\r\nGenetic differences in the OATP1B1 (organic-anion-transporting polypeptide 1B1) hepatic transporter encoded by the SCLCO1B1 gene (Solute Carrier Organic Anion Transporter family member 1B1) have been shown to impact atorvastatin pharmacokinetics. Evidence from pharmacogenetic studies of the c.521T>C single nucleotide polymorphism (SNP) in the gene encoding OATP1B1 (SLCO1B1) demonstrated that atorvastatin AUC was increased 2.45-fold for individuals homozygous for 521CC compared to homozygous 521TT individuals.[A181493] Other statin drugs impacted by this polymorphism include [simvastatin], [pitavastatin], [rosuvastatin], and [pravastatin].[A181460] | Metabolism: Atorvastatin is highly metabolized to ortho- and parahydroxylated derivatives and various beta-oxidation products, primarily by Cytochrome P450 3A4 in the intestine and liver.[F4670,F4673] Atorvastatin's metabolites undergo further lactonization via the formation of acyl glucuronide intermediates by the enzymes UGT1A1 and UGT1A3. These lactones can be hydrolyzed back to their corresponding acid forms and exist in equilibirum.[A19474,A181460]\r\n\r\n_In vitro_ inhibition of HMG-CoA reductase by ortho- and parahydroxylated metabolites is equivalent to that of atorvastatin. Approximately 70% of circulating inhibitory activity for HMG-CoA reductase is attributed to active metabolites.[F4670,F4673] | Half-life: The half-life of atorvastatin is 14 hours while the half-life of its metabolites can reach up to 30 hours.[F4670,F4673] | Clearance: The registered total plasma clearance of atorvastatin is of 625 ml/min.[A19474] | Protein Binding: Atorvastatin is highly bound to plasma proteins and over 98% of the administered dose is found in a bound form.[F4670,F4673]",
-            "similarity_score": 91.86
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "metabolism",
-            "text": "Metabolism: Hepatic. Metabolized by CYP3A4 and CYP3A5.",
-            "similarity_score": 91.55
-          }
-        ],
-        "indications": [
-          {
-            "drug_id": "DB01076",
-            "section": "indications",
-            "text": "Indications: Atorvastatin is indicated for the treatment of several types of dyslipidemias, including primary hyperlipidemia and mixed dyslipidemia in adults, hypertriglyceridemia, primary dysbetalipoproteinemia, homozygous familial hypercholesterolemia, and heterozygous familial hypercholesterolemia in adolescent patients with failed dietary modifications.[A177397]\r\n\r\nDyslipidemia describes an elevation of plasma cholesterol, triglycerides or both as well as to the presence of low levels of high-density lipoprotein. This condition represents an increased risk for the development of atherosclerosis.[L6025] \r\n\r\nAtorvastatin is indicated, in combination with dietary modifications, to prevent cardiovascular events in patients with cardiac risk factors and/or abnormal lipid profiles.[A177397]\r\n\r\nAtorvastatin can be used as a preventive agent for myocardial infarction, stroke, revascularization, and angina, in patients without coronary heart disease but with multiple risk factors and in patients with type 2 diabetes without coronary heart disease but multiple risk factors.[A177397]\r\n\r\nAtorvastatin may be used as a preventive agent for non-fatal myocardial infarction, fatal and non-fatal stroke, revascularization procedures, hospitalization for congestive heart failure and angina in patients with coronary heart disease.[A177397]\r\n\r\nPrescribing of statin medications is considered standard practice following any cardiovascular events and for people with a moderate to high risk of development of CVD. Statin-indicated conditions include diabetes mellitus, clinical atherosclerosis (including myocardial infarction, acute coronary syndromes, stable angina, documented coronary artery disease, stroke, trans ischemic attack (TIA), documented carotid disease, peripheral artery disease, and claudication), abdominal aortic aneurysm, chronic kidney disease, and severely elevated LDL-C levels.[A181087, A181406]",
+            "text": "Drug: Insulin beef, Synonyms: Insulin (beef), Insulin bovine, Insulin purified beef, ID: Unknown Drug",
             "similarity_score": 93.49
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: For more information, refer to [ibuprofen].",
-            "similarity_score": 93.11
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: Used to lower LDL and HDL cholesterol.",
-            "similarity_score": 93.02
-          }
-        ],
-        "dosage": [],
-        "interactions": [
-          {
-            "drug_id": "DB01076",
-            "section": "interactions",
-            "text": "Drug Interactions: Cyclosporine: The excretion of Atorvastatin can be decreased when combined with Cyclosporine. | Reserpine: Reserpine may decrease the excretion rate of Atorvastatin which could result in a higher serum level. | Ursodeoxycholic acid: Ursodeoxycholic acid may decrease the excretion rate of Atorvastatin which could result in a higher serum level. | Cholic Acid: Cholic Acid may decrease the excretion rate of Atorvastatin which could result in a higher serum level. | Valinomycin: Valinomycin may decrease the excretion rate of Atorvastatin which could result in a higher serum level. | Troglitazone: Troglitazone may decrease the excretion rate of Atorvastatin which could result in a higher serum level. | Progesterone: Progesterone may decrease the excretion rate of Atorvastatin which could result in a higher serum level. | Celecoxib: Celecoxib may decrease the excretion rate of Atorvastatin which could result in a higher serum level. | Chlorpromazine: Chlorpromazine may decrease the excretion rate of Atorvastatin which could result in a higher serum level. | Olmesartan: Olmesartan may decrease the excretion rate of Atorvastatin which could result in a higher serum level.",
-            "similarity_score": 91.9
-          },
-          {
-            "drug_id": "DB02329",
-            "section": "interactions",
-            "text": "Drug Interactions: Spironolactone: The therapeutic efficacy of Spironolactone can be decreased when used in combination with Carbenoxolone.",
-            "similarity_score": 90.95
-          },
-          {
-            "drug_id": "DB13944",
-            "section": "interactions",
-            "text": "Drug Interactions: Aripiprazole: The metabolism of Aripiprazole can be increased when combined with Testosterone enanthate. | Aripiprazole lauroxil: The metabolism of Aripiprazole lauroxil can be increased when combined with Testosterone enanthate. | Eliglustat: The metabolism of Eliglustat can be decreased when combined with Testosterone enanthate. | Ibrutinib: The metabolism of Ibrutinib can be decreased when combined with Testosterone enanthate. | Cilostazol: The metabolism of Cilostazol can be decreased when combined with Testosterone enanthate. | Colchicine: The metabolism of Colchicine can be decreased when combined with Testosterone enanthate. | Fentanyl: Fentanyl may decrease the excretion rate of Testosterone enanthate which could result in a higher serum level. | Iloperidone: The metabolism of Iloperidone can be decreased when combined with Testosterone enanthate. | Retapamulin: The metabolism of Retapamulin can be decreased when combined with Testosterone enanthate. | Tofacitinib: The metabolism of Tofacitinib can be decreased when combined with Testosterone enanthate.",
-            "similarity_score": 90.95
-          }
-        ],
-        "names": [
-          {
-            "drug_id": "DB01076",
-            "section": "names",
-            "text": "Drug: Atorvastatin, Synonyms: Atorvastatin, atorvastatina, atorvastatine, atorvastatinum, ID: DB01076",
-            "similarity_score": 96.27
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "names",
-            "text": "Drug: Mevastatin, Synonyms: Compactin, Mevastatin, Mevastatina, Mévastatine, Mevastatinum, ID: Unknown Drug",
-            "similarity_score": 92.55
-          },
-          {
-            "drug_id": "DB01095",
-            "section": "names",
-            "text": "Drug: Fluvastatin, Synonyms: Fluvastatin, fluvastatina, fluvastatine, fluvastatinum, ID: DB01095",
-            "similarity_score": 92.47
-          }
-        ],
-        "pharmacology": [
-          {
-            "drug_id": "DB01076",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Atorvastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of HMG-CoA to mevalonate, an early rate-limiting step in cholesterol biosynthesis.[A177388,A181421] Atorvastatin acts primarily in the liver, where decreased hepatic cholesterol concentrations stimulate the upregulation of hepatic low-density lipoprotein (LDL) receptors, which increases hepatic uptake of LDL. Atorvastatin also reduces Very-Low-Density Lipoprotein-Cholesterol (VLDL-C), serum triglycerides (TG) and Intermediate Density Lipoproteins (IDL), as well as the number of apolipoprotein B (apo B) containing particles, but increases High-Density Lipoprotein Cholesterol (HDL-C). \r\n\r\n_In vitro_ and _in vivo_ animal studies also demonstrate that atorvastatin exerts vasculoprotective effects independent of its lipid-lowering properties, also known as the pleiotropic effects of statins.[A181424] These effects include improvement in endothelial function, enhanced stability of atherosclerotic plaques, reduced oxidative stress and inflammation, and inhibition of the thrombogenic response. Statins were also found to bind allosterically to β2 integrin function-associated antigen-1 (LFA-1), which plays an essential role in leukocyte trafficking and T cell activation.[A181559] | Pharmacodynamics: Atorvastatin is an oral antilipemic agent that reversibly inhibits HMG-CoA reductase. It lowers total cholesterol, low-density lipoprotein-cholesterol (LDL-C), apolipoprotein B (apo B), non-high density lipoprotein-cholesterol (non-HDL-C), and triglyceride (TG) plasma concentrations while increasing HDL-C concentrations. High LDL-C, low HDL-C and high TG concentrations in the plasma are associated with increased risk of atherosclerosis and cardiovascular disease. The total cholesterol to HDL-C ratio is a strong predictor of coronary artery disease, and high ratios are associated with a higher risk of disease. Increased levels of HDL-C are associated with lower cardiovascular risk. By decreasing LDL-C and TG and increasing HDL-C, atorvastatin reduces the risk of cardiovascular morbidity and mortality.[A174580,A181087,A181406,A181925] \r\n\r\nElevated cholesterol levels (and high low-density lipoprotein (LDL) levels in particular) are an important risk factor for the development of CVD.[A181087] Clinical studies have shown that atorvastatin reduces LDL-C and total cholesterol by 36-53%.[A177415] In patients with dysbetalipoproteinemia, atorvastatin reduced the levels of intermediate-density lipoprotein cholesterol.[A177397] It has also been suggested that atorvastatin can limit the extent of angiogenesis, which can be useful in the treatment of chronic subdural hematoma.[A177388]\r\n\r\n**Myopathy/Rhabdomyolysis**\r\n\r\nAtorvastatin, like other HMG-CoA reductase inhibitors, is associated with a risk of drug-induced myopathy characterized by muscle pain, tenderness, or weakness in conjunction with elevated levels of creatine kinase (CK). Myopathy often manifests as rhabdomyolysis with or without acute renal failure secondary to myoglobinuria. The risk of statin-induced myopathy is dose-related, and the symptoms of myopathy are typically resolved upon drug discontinuation. Results from observational studies suggest that 10-15% of people taking statins may experience muscle aches at some point during treatment.[A182258]\r\n\r\n**Liver Dysfunction**\r\n\r\nStatins, like some other lipid-lowering therapies, have been associated with biochemical abnormalities of liver function. Persistent elevations (> 3 times the upper limit of normal [ULN] occurring on two or more occasions) in serum transaminases occurred in 0.7% of patients who received atorvastatin in clinical trials. This effect appears to be dose-related.[F4670,F4673]\r\n\r\n**Endocrine Effects**\r\n\r\nStatins are associated with a risk of increased serum HbA1c and glucose levels. An _in vitro_ study demonstrated a dose-dependent cytotoxic effect on human pancreatic islet β cells following treatment with atorvastatin. Moreover, insulin secretion rates decreased relative to control.[A182012]\r\n\r\nHMG-CoA reductase inhibitors interfere with cholesterol synthesis and may theoretically interfere with the production of adrenal and/or gonadal steroids. Clinical studies with atorvastatin and other HMG-CoA reductase inhibitors have suggested that these agents do not affect plasma cortisol concentrations, basal plasma testosterone concentration, or adrenal reserve. However, the effect of statins on male fertility has not been fully investigated. The effects of statins on the pituitary-gonadal axis in premenopausal women are unknown.[F4673]\r\n\r\n**Cardiovascular**\r\n\r\nSignificant decreases in circulating ubiquinone levels in patients treated with atorvastatin and other statins have been observed. The clinical significance of a potential long-term statin-induced deficiency of ubiquinone has not been established. It has been reported that a decrease in myocardial ubiquinone levels could lead to impaired cardiac function in patients with borderline congestive heart failure.[F4673]\r\n\r\n**Lipoprotein A**\r\n\r\nIn some patients, the beneficial effect of lowered total cholesterol and LDL-C levels may be partly blunted by the concomitant increase in Lp(a) lipoprotein concentrations. Present knowledge suggests the importance of high Lp(a) levels as an emerging risk factor for coronary heart disease.[F4673] Further studies have demonstrated statins affect Lp(a) levels differently in patients with dyslipidemia depending on their apo(a) phenotype; statins increase Lp(a) levels exclusively in patients with the low molecular weight apo(a) phenotype.[A181418]",
-            "similarity_score": 93.48
-          },
-          {
-            "drug_id": "DB08860",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Pitavastatin is a statin medication and a competitive inhibitor of the enzyme HMG-CoA (3-hydroxy-3-methylglutaryl coenzyme A) reductase, which catalyzes the conversion of HMG-CoA to mevalonate, an early rate-limiting step in cholesterol biosynthesis.[A181421] Pitavastatin acts primarily in the liver, where decreased hepatic cholesterol concentrations stimulate the upregulation of hepatic low density lipoprotein (LDL) receptors which increase hepatic uptake of LDL, thereby reducing circulating LDL-C levels. \r\n\r\nIn vitro and in vivo animal studies also demonstrate that statins exert vasculoprotective effects independent of their lipid-lowering properties, also known as the pleiotropic effects of statins.[A181424] This includes improvement in endothelial function, enhanced stability of atherosclerotic plaques, reduced oxidative stress and inflammation, and inhibition of the thrombogenic response.\r\n\r\nStatins have also been found to bind allosterically to β2 integrin function-associated antigen-1 (LFA-1), which plays an important role in leukocyte trafficking and in T cell activation.[A181559] | Pharmacodynamics: Pitavastatin is an oral antilipemic agent which inhibits HMG-CoA reductase. It is used to lower total cholesterol, low density lipoprotein-cholesterol (LDL-C), apolipoprotein B (apoB), non-high density lipoprotein-cholesterol (non-HDL-C), and trigleride (TG) plasma concentrations while increasing HDL-C concentrations. High LDL-C, low HDL-C and high TG concentrations in the plasma are associated with increased risk of atherosclerosis and cardiovascular disease. The total cholesterol to HDL-C ratio is a strong predictor of coronary artery disease and high ratios are associated with higher risk of disease. Increased levels of HDL-C are associated with lower cardiovascular risk. By decreasing LDL-C and TG and increasing HDL-C, rosuvastatin reduces the risk of cardiovascular morbidity and mortality.[A181087, A181406]\r\n\r\nElevated cholesterol levels, and in particular, elevated low-density lipoprotein (LDL) levels, are an important risk factor for the development of CVD.[A181087] Use of statins to target and reduce LDL levels has been shown in a number of landmark studies to significantly reduce the risk of development of CVD and all-cause mortality.[A181090,A181093,A181096,A181427,A181475] Statins are considered a cost-effective treatment option for CVD due to their evidence of reducing all-cause mortality including fatal and non-fatal CVD as well as the need for surgical revascularization or angioplasty following a heart attack.[A181087, A181406] Evidence has shown that even for low-risk individuals (with <10% risk of a major vascular event occurring within 5 years) statins cause a 20%-22% relative reduction in major cardiovascular events (heart attack, stroke, coronary revascularization, and coronary death) for every 1 mmol/L reduction in LDL without any significant side effects or risks.[A181397, A181403]\r\n\r\n**Skeletal Muscle Effects**\r\n\r\nPitavastatin may cause myopathy (muscle pain, tenderness, or weakness with creatine kinase (CK) above ten times the upper limit of normal) and rhabdomyolysis (with or without acute renal failure secondary to myoglobinuria). Rare fatalities have occurred as a result of rhabdomyolysis with statin use, including pitavastatin. Predisposing factors for myopathy include advanced age (≥65 years), female gender, uncontrolled hypothyroidism, and renal impairment. In most cases, muscle symptoms and CK increases resolved when treatment was promptly discontinued. As dosages of pitavastatin greater than 4mg per day were associated with an increased risk of severe myopathy, the product monograph recommends a maximum daily dose of 4mg once daily.[L48616]\r\n\r\nThe risk of myopathy during treatment with pitavstatin may be increased with concurrent administration of interacting drugs such as [fenofibrate], [niacin], [gemfibrozil], and [cyclosporine].  Cases of myopathy, including rhabdomyolysis, have been reported with HMG-CoA reductase inhibitors coadministered with [colchicine], and caution should therefore be exercised when prescribing these two medications together.[L48616]\r\n\r\nReal-world data from observational studies has suggested that 10-15% of people taking statins may experience muscle aches at some point during treatment.[A182258]\r\n\r\n**Hepatic Dysfunction**\r\n\r\nIncreases in serum transaminases have been reported with pitavastatin. In most cases, the elevations were transient and either resolved or improved on continued therapy or after a brief interruption in therapy. There have been rare postmarketing reports of fatal and non-fatal hepatic failure in patients taking statins, including pitavastatin.[L48616]\r\n\r\nPatients who consume substantial quantities of alcohol and/or have a history of liver disease may be at increased risk for hepatic injury.[L48616]\r\n\r\n**Increases in HbA1c and Fasting Serum Glucose Levels**\r\n\r\nIncreases in HbA1c and fasting serum glucose levels have been reported with statins, including pitavastatin. Optimize lifestyle measures, including regular exercise, maintaining a healthy body weight, and making healthy food choices.[L48616]\r\n\r\nAn in vitro study found that [atorvastatin], [pravastatin], [rosuvastatin], and [pitavastatin] exhibited a dose-dependent cytotoxic effect on human pancreas islet β cells, with reductions in cell viability of 32, 41, 34 and 29%, respectively, versus control. Moreover, insulin secretion rates were decreased by 34, 30, 27 and 19%, respectively, relative to control.[A182012]",
-            "similarity_score": 91.49
-          },
-          {
-            "drug_id": "DB01115",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Nifedipine blocks voltage gated L-type calcium channels in vascular smooth muscle and myocardial cells.[A190204] This blockage prevents the entry of calcium ions into cells during depolarization, reducing peripheral arterial vascular resistance and dilating coronary arteries.[A190204] These actions reduce blood pressure and increase the supply of oxygen to the heart, alleviating angina.[A190204] | Pharmacodynamics: Nifedipine is an inhibitor of L-type voltage gated calcium channels that reduces blood pressure and increases oxygen supply to the heart.[A190204] Immediate release nifedipine's duration of action requires dosing 3 times daily.[L11383] Nifedipine dosing is generally 10-120mg daily.[L11383] Patients should be counselled regarding the risk of excessive hypotension, angina, and myocardial infarction.[L11383]",
-            "similarity_score": 90.69
-          }
-        ],
-        "toxicity": [
-          {
-            "drug_id": "DB01076",
-            "section": "toxicity",
-            "text": "Toxicity: The reported LD50 of oral atorvastatin in mice is higher than 5000 mg/kg.[MSDS] In cases of overdose with atorvastatin, there is reported symptoms of complicated breathing, jaundice, liver damage, dark urine, muscle pain, and seizures.[L6031] In case of overdose, symptomatic treatment is recommended and due to the high plasma protein binding, hemodialysis is not expected to generate significant improvement.[FDA label]\r\n\r\nIn carcinogenic studies with high doses of atorvastatin, evidence of rhabdomyosarcoma, fibrosarcoma, liver adenoma, and liver carcinoma were observed.[FDA label]\r\n\r\nIn fertility studies with high doses of atorvastatin, there were events of aplasia, aspermia, low testis and epididymal weight, decreased sperm motility, decreased spermatid head concentration and increased abnormal sperm.[FDA label]\r\n\r\nAtorvastatin was shown to not be mutagenic in diverse mutagenic assays.[FDA label]",
-            "similarity_score": 94.39
-          },
-          {
-            "drug_id": "DB00883",
-            "section": "toxicity",
-            "text": "Toxicity: Symptoms of overdose include reduced cardiac output and hypotension.",
-            "similarity_score": 91.97
-          },
-          {
-            "drug_id": "DB00511",
-            "section": "toxicity",
-            "text": "Toxicity: Toxicity includes ventricular tachycardia or ventricular fibrillation, or progressive bradyarrhythmias, or heart block. LD50 = 7.8 mg/kg (orally in mice).",
-            "similarity_score": 91.94
-          }
-        ]
-      }
-    },
-    {
-      "drug_name": "Amlodipine",
-      "selected_sections": [
-        "metabolism",
-        "indications",
-        "dosage",
-        "interactions",
-        "names",
-        "pharmacology",
-        "toxicity"
-      ],
-      "sections": {
-        "metabolism": [
-          {
-            "drug_id": "DB00381",
-            "section": "metabolism",
-            "text": "Absorption: Amlodipine absorbed slowly and almost completely from the gastrointestinal tract. Peak plasma concentrations are achieved 6-12 hours after oral administration. The estimated bioavailability of amlodipine is 64-90%. Steady-state plasma amlodipine levels are achieved after 7-8 days of consecutive daily dosing. Absorption is not affected by food [FDA label]. | Metabolism: Amlodipine is heavily (approximately 90%) converted to inactive metabolites via hepatic breakdown with 10% of the parent compound and 60% of the metabolites found excreted in the urine. _Ex vivo_ studies have shown that about 93% of the circulating drug is bound to plasma proteins in hypertensive patients [FDA label].  Characteristics that add to amlodipine's unique pharmacologic profile include nearly complete absorption, late-peak plasma concentrations, high bioavailability, and slow hepatic breakdown [A574]. | Half-life: The terminal elimination half-life of about 30–50 hours [FDA label].\r\n\r\nPlasma elimination half-life is 56 hours in patients with impaired hepatic function, titrate slowly when administering this drug to patients with severe hepatic impairment [FDA label]. | Clearance: Total body clearance (CL) has been calculated as 7 ± 1.3 ml/min/kg (0.42 ± 0.078 L/ h/kg) in healthy volunteers [A175327], [A175336]. \r\n\r\nElderly patients show a reduced clearance of amlodipine with an AUC (area under the curve) increase of about 40–60%, and a lower initial dose may be required [FDA label]. | Protein Binding: About 98% [A175327], [A175336].",
-            "similarity_score": 92.98
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "metabolism",
-            "text": "Metabolism: Metabolised primarily by the CYP3A4 system",
-            "similarity_score": 92.78
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "metabolism",
-            "text": "Metabolism: Hepatic. Metabolized by CYP3A4 and CYP3A5.",
-            "similarity_score": 92.19
-          }
-        ],
-        "indications": [
-          {
-            "drug_id": "DB00381",
-            "section": "indications",
-            "text": "Indications: Amlodipine may be used alone or in combination with other antihypertensive and antianginal agents for the treatment of the following conditions [FDA label]:\r\n\r\n• Hypertension \r\n\r\n• Coronary artery disease\r\n\r\n• Chronic stable angina\r\n\r\n• Vasospastic angina (Prinzmetal’s or Variant angina) \r\n\r\n• Angiographically documented coronary artery disease in patients without heart failure or an ejection fraction < 40%",
-            "similarity_score": 95.19
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: Used to treat hypertension.",
-            "similarity_score": 93.09
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "indications",
-            "text": "Indications: Used for the treatment of hypertension and heart failure [A20319].",
-            "similarity_score": 93.01
-          }
-        ],
-        "dosage": [],
-        "interactions": [
-          {
-            "drug_id": "DB00381",
-            "section": "interactions",
-            "text": "Drug Interactions: Duloxetine: The risk or severity of orthostatic hypotension and syncope can be increased when Amlodipine is combined with Duloxetine. | Levodopa: The risk or severity of hypotension and orthostatic hypotension can be increased when Amlodipine is combined with Levodopa. | Risperidone: Amlodipine may increase the hypotensive activities of Risperidone. | Ceritinib: Amlodipine may increase the bradycardic activities of Ceritinib. | Ivabradine: Amlodipine may increase the bradycardic activities of Ivabradine. | Ruxolitinib: Ruxolitinib may increase the bradycardic activities of Amlodipine. | Alfuzosin: Alfuzosin may increase the hypotensive activities of Amlodipine. | Amifostine: Amlodipine may increase the hypotensive activities of Amifostine. | Diazoxide: Diazoxide may increase the hypotensive activities of Amlodipine. | Methylphenidate: Methylphenidate may decrease the antihypertensive activities of Amlodipine.",
-            "similarity_score": 92.26
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "interactions",
-            "text": "Drug Interactions: Oxymetazoline: The absorption of Metizoline can be decreased when combined with Oxymetazoline.",
-            "similarity_score": 91.98
-          },
-          {
-            "drug_id": "DB00848",
-            "section": "interactions",
-            "text": "Drug Interactions: Ivermectin: The bioavailability of Ivermectin can be increased when combined with Levamisole. | Albendazole: The bioavailability of Albendazole can be increased when combined with Levamisole.",
-            "similarity_score": 91.66
-          }
-        ],
-        "names": [
-          {
-            "drug_id": "DB00381",
-            "section": "names",
-            "text": "Drug: Amlodipine, Synonyms: (RS)-3-ethyl 5-methyl 2-[(2-aminoethoxy)methyl]-4-(2-chlorophenyl)-6-methyl-1,4-dihydropyridine-3,5-dicarboxylate, 3-Ethyl 5-methylester, (±)-2-[(2-aminoethoxy)methyl]-4-(o-chlorophenyl)-1,4-dihydro-6-methyl-3,5-pyridinedicarboxylate, Amlodipine, Amlodipine free base, Amlodipino, ID: DB00381",
-            "similarity_score": 94.5
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "names",
-            "text": "Drug: Levamlodipine, Synonyms: Levamlodipine, Levoamlodipine, S-amlodipine, ID: Unknown Drug",
-            "similarity_score": 93.73
-          },
-          {
-            "drug_id": "Unknown Drug",
-            "section": "names",
-            "text": "Drug: Darodipine, Synonyms: Darodipine, ID: Unknown Drug",
-            "similarity_score": 93.38
-          }
-        ],
-        "pharmacology": [
-          {
-            "drug_id": "DB00381",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: **Mechanism of action on blood pressure**\r\n\r\nAmlodipine is considered a peripheral arterial vasodilator that exerts its action directly on vascular smooth muscle to lead to a reduction in peripheral vascular resistance, causing a decrease in blood pressure. Amlodipine is a dihydropyridine calcium antagonist (calcium ion antagonist or slow-channel blocker) that inhibits the influx of calcium ions into both vascular smooth muscle and cardiac muscle. Experimental studies imply that amlodipine binds to both _dihydropyridine_ and _nondihydropyridine_ binding sites, located on cell membranes. The contraction of cardiac muscle and vascular smooth muscle are dependent on the movement of extracellular calcium ions into these cells by specific ion channels. Amlodipine blocks calcium ion influx across cell membranes with selectivity. A stronger effect of amlodipine is exerted on vascular smooth muscle cells than on cardiac muscle cells [FDA label]. Direct actions of amlodipine on vascular smooth muscle result in reduced blood pressure [F3757]. \r\n\r\n**Mechanism of action in angina**\r\n\r\nThe exact mechanism by which amlodipine relieves the symptoms of angina have not been fully elucidated to this date, however, the mechanism of action is likely twofold:\r\n\r\nAmlodipine has a dilating effect on peripheral arterioles, reducing the total peripheral resistance (afterload) against which the cardiac muscle functions. Since the heart rate remains stable during amlodipine administration, the reduced work of the heart reduces both myocardial energy use and oxygen requirements [F3757].\r\n\r\nDilatation of the main coronary arteries and coronary arterioles, both in healthy and ischemic areas, is another possible mechanism of amlodipine reduction of blood pressure. The dilatation causes an increase in myocardial oxygen delivery in patients experiencing coronary artery spasm (Prinzmetal's or variant angina) and reduces coronary vasoconstriction caused by smoking [F3757]. | Pharmacodynamics: **General pharmacodynamic effects**\r\n\r\nAmlodipine has a strong affinity for cell membranes, modulating calcium influx by inhibiting selected membrane calcium channels. This drug's unique binding properties allow for its long-acting action and less frequent dosing regimen [A573], [FDA label].  \r\n\r\n**Hemodynamic effects**\r\n\r\nAfter the administration of therapeutic doses of amlodipine to patients diagnosed with hypertension, amlodipine causes vasodilation, which results in a reduction of supine and standing blood pressure. During these blood pressure reductions, there are no clinically significant changes in heart rate or plasma catecholamine levels with long-term use. Acute intravenous administration of amlodipine reduces arterial blood pressure and increases heart rate in patients with chronic stable angina, however, chronic oral administration of amlodipine in clinical studies did not cause clinically significant alterations in heart rate or blood pressures in patients diagnosed with angina and normal blood pressure. With long-term, once daily oral administration, antihypertensive effectiveness is maintained for at least 24 hours [FDA label]. \r\n\r\n**Electrophysiologic effects**\r\n\r\nAmlodipine does not change sinoatrial (SA) nodal function or atrioventricular (AV) conduction in animals or humans. In patients who were diagnosed with chronic stable angina, the intravenous administration of 10 mg of amlodipine did not cause clinically significant alterations A-H and H-V conduction and sinus node recovery time after cardiac pacing. Patients administered amlodipine with concomitant beta-blockers produced similar results. In clinical trials in which amlodipine was given in combination with beta-blockers to patients diagnosed with hypertension or angina, no adverse effects on electrocardiographic parameters were noted. In clinical studies comprised of angina patients alone, amlodipine did not change electrocardiographic intervals or produce high degrees of AV block [FDA label]. \r\n\r\n**Effects on angina**\r\n\r\nAmlodipine relieves the symptoms of chest pain associated with angina. In patients diagnosed with angina, daily administration of a single amlodipine dose increases total exercise time, the time to angina onset, and the time to 1 mm ST-segment depression on ECG studies, decreases anginal attack frequency, and decreases the requirement for nitroglycerin tablets [F3757].",
-            "similarity_score": 93.33
-          },
-          {
-            "drug_id": "DB01115",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: Nifedipine blocks voltage gated L-type calcium channels in vascular smooth muscle and myocardial cells.[A190204] This blockage prevents the entry of calcium ions into cells during depolarization, reducing peripheral arterial vascular resistance and dilating coronary arteries.[A190204] These actions reduce blood pressure and increase the supply of oxygen to the heart, alleviating angina.[A190204] | Pharmacodynamics: Nifedipine is an inhibitor of L-type voltage gated calcium channels that reduces blood pressure and increases oxygen supply to the heart.[A190204] Immediate release nifedipine's duration of action requires dosing 3 times daily.[L11383] Nifedipine dosing is generally 10-120mg daily.[L11383] Patients should be counselled regarding the risk of excessive hypotension, angina, and myocardial infarction.[L11383]",
-            "similarity_score": 91.35
-          },
-          {
-            "drug_id": "DB01025",
-            "section": "pharmacology",
-            "text": "Mechanism of Action: As a benzopyrano-bipyridine carboxylic acid derivative, amlexanox has anti-inflammatory and antiallergic properties. It inhibits chemical mediatory release of the slow-reacting substance of anaphylaxis (SRS-A) and may have antagonistic effects on interleukin-3. When cells are under stress, they release an inactive form of human fibroblast growth factor 1 (FGF-1), a potent mitogen (entity that causes mitosis). Amlexanox binds to FGF1, increasing its conformational stability, sterically blocking Cu(2+) induced oxidation which normally leads to activation of FGF-1. | Pharmacodynamics: Amlexanox is a mucoadhesive oral paste which has been clinically proven to abort the onset, accelerate healing and resolve the pain of aphthous ulcers (canker sores). It decreases the time ulcers take to heal. Because amlexanox decreases the healing time, it also decreases the pain you feel. Recent studies have also shown that the majority of ulcers can be prevented by application of the paste during the prodromal (pre-ulcerative) phase of the disease. Recurrent Aphthous Ulcers (RAU) also known as Recurrent Aphthous Stomatitis (RAS) is recognized as the most common oral mucosal disease known to man. Estimates suggest that 20% - 25% of the general population suffer at least one incidence of aphthous ulcers each year. Amlexanox is also being investigated for its anti-allergenic and anti-inflammatory properties.",
-            "similarity_score": 91.11
-          }
-        ],
-        "toxicity": [
-          {
-            "drug_id": "DB00381",
-            "section": "toxicity",
-            "text": "Toxicity: **Acute oral toxicity (LD50)**: 37 mg/kg (mouse) [MSDS]. \r\n\r\n**Overdose**\r\n\r\nAn overdose of amlodipine could result in a high degree of peripheral vasodilatation with a possibility of reflex tachycardia. Significant and prolonged hypotension leading to shock and fatal outcomes have been reported [FDA label].\r\n\r\n**Carcinogenesis, mutagenesis, impairment of fertility**\r\n\r\nRats and mice treated with amlodipine maleate in the diet on a long-term basis for up to 2 years demonstrated no evidence of a carcinogenic effect of the drug. For the mouse, the highest dose was comparable to the maximum recommended human dose of 10 mg amlodipine per day.  For the rat, the highest dose was measured to be about twice the maximum recommended human dose [FDA label].\r\n\r\nMutagenicity studies using amlodipine maleate showed no drug-related gene or chromosomal effects [FDA label].\r\n\r\nThere was no impact on the fertility of rats given oral amlodipine maleate (males for 64 days and females for 14 days before mating) at doses up to 10 mg amlodipine/kg/day (8 times the maximum recommended human dose) [FDA label].\r\n\r\n**Use in pregnancy**\r\n\r\nThe safety of amlodipine in human pregnancy or lactation has not been proven. Amlodipine is therefore considered a pregnancy category C drug [F3757]. \r\nUse amlodipine only if the potential benefit justifies the potential risk [FDA label]. \r\n\r\n**Use in nursing**\r\n\r\nDiscontinue when administering amlodipine [FDA label].",
-            "similarity_score": 93.76
-          },
-          {
-            "drug_id": "DB01197",
-            "section": "toxicity",
-            "text": "Toxicity: Symptoms of overdose include emesis and decreased blood pressure. Side effects include dose-dependent rash (usually maculopapular), taste alterations, hypotension, gastric irritation, cough, and angioedema.",
-            "similarity_score": 92.49
-          },
-          {
-            "drug_id": "DB01118",
-            "section": "toxicity",
-            "text": "Toxicity: The LD50 of oral amiodarone in mice and rats exceeds 3,000 mg/kg.[L3561]\r\nAn overdose with amiodarone can have a fatal outcome due to its potential to cause arrhythmia. Signs or symptoms of an overdose may include, hypotension, shock, bradycardia, AV block, and liver toxicity. In cases of an overdose, initiate supportive treatment and, if needed, use fluids, vasopressors, or positive inotropic agents. Temporary pacing may be required for heart block. Ensure to monitor liver function regularly. Amiodarone and its main metabolite, DEA, are not removable by dialysis.[L8087]",
-            "similarity_score": 92.47
           }
         ]
       }

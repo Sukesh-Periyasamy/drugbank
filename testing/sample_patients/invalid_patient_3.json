@@ -1,0 +1,13 @@
+{
+  "patient_id": "",
+  "name": "Invalid Constraints Patient",
+  "age": 150,
+  "sex": "InvalidSex",
+  "weight_kg": -10,
+  "current_medications": [
+    {
+      "drug_name": "",
+      "dose": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    }
+  ]
+}

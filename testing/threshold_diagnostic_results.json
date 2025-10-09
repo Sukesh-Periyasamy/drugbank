@@ -1,0 +1,697 @@
+{
+  "age_threshold_analysis": [
+    {
+      "refined_query": "Medications: Amlodipine, Simvastatin | Conditions: Hypertension, Hyperlipidemia | Labs: eGFR: 70 mL/min/1.73m2, Creatinine: 1.1 mg/dL | Demographics: Sex: Female, Weight: 70kg, Age: 60",
+      "medications": [
+        "Amlodipine",
+        "Simvastatin"
+      ],
+      "section_map": {
+        "Amlodipine": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ],
+        "Simvastatin": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ]
+      },
+      "unique_sections": [
+        "indications",
+        "interactions",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 8,
+      "age": 60
+    },
+    {
+      "refined_query": "Medications: Amlodipine, Simvastatin | Conditions: Hypertension, Hyperlipidemia | Labs: eGFR: 70 mL/min/1.73m2, Creatinine: 1.1 mg/dL | Demographics: Sex: Female, Weight: 70kg, Age: 63",
+      "medications": [
+        "Amlodipine",
+        "Simvastatin"
+      ],
+      "section_map": {
+        "Amlodipine": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ],
+        "Simvastatin": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ]
+      },
+      "unique_sections": [
+        "indications",
+        "interactions",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 8,
+      "age": 63
+    },
+    {
+      "refined_query": "Medications: Amlodipine, Simvastatin | Conditions: Hypertension, Hyperlipidemia | Labs: eGFR: 70 mL/min/1.73m2, Creatinine: 1.1 mg/dL | Demographics: Sex: Female, Weight: 70kg, Age: 64",
+      "medications": [
+        "Amlodipine",
+        "Simvastatin"
+      ],
+      "section_map": {
+        "Amlodipine": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ],
+        "Simvastatin": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ]
+      },
+      "unique_sections": [
+        "indications",
+        "interactions",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 8,
+      "age": 64
+    },
+    {
+      "refined_query": "Medications: Amlodipine, Simvastatin | Conditions: Hypertension, Hyperlipidemia | Labs: eGFR: 70 mL/min/1.73m2, Creatinine: 1.1 mg/dL | Demographics: Sex: Female, Weight: 70kg, Age: 65",
+      "medications": [
+        "Amlodipine",
+        "Simvastatin"
+      ],
+      "section_map": {
+        "Amlodipine": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions"
+        ],
+        "Simvastatin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 12,
+      "age": 65
+    },
+    {
+      "refined_query": "Medications: Amlodipine, Simvastatin | Conditions: Hypertension, Hyperlipidemia | Labs: eGFR: 70 mL/min/1.73m2, Creatinine: 1.1 mg/dL | Demographics: Sex: Female, Weight: 70kg, Age: 66",
+      "medications": [
+        "Amlodipine",
+        "Simvastatin"
+      ],
+      "section_map": {
+        "Amlodipine": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions"
+        ],
+        "Simvastatin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 12,
+      "age": 66
+    },
+    {
+      "refined_query": "Medications: Amlodipine, Simvastatin | Conditions: Hypertension, Hyperlipidemia | Labs: eGFR: 70 mL/min/1.73m2, Creatinine: 1.1 mg/dL | Demographics: Sex: Female, Weight: 70kg, Age: 70",
+      "medications": [
+        "Amlodipine",
+        "Simvastatin"
+      ],
+      "section_map": {
+        "Amlodipine": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions"
+        ],
+        "Simvastatin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 12,
+      "age": 70
+    }
+  ],
+  "egfr_threshold_analysis": [
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 70 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ],
+        "Lisinopril": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ]
+      },
+      "unique_sections": [
+        "indications",
+        "interactions",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 8,
+      "egfr": 70
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 65 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ],
+        "Lisinopril": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ]
+      },
+      "unique_sections": [
+        "indications",
+        "interactions",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 8,
+      "egfr": 65
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 61 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ],
+        "Lisinopril": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ]
+      },
+      "unique_sections": [
+        "indications",
+        "interactions",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 8,
+      "egfr": 61
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 60 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ],
+        "Lisinopril": [
+          "indications",
+          "interactions",
+          "pharmacology",
+          "names"
+        ]
+      },
+      "unique_sections": [
+        "indications",
+        "interactions",
+        "names",
+        "pharmacology"
+      ],
+      "total_sections": 8,
+      "egfr": 60
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 59 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ],
+        "Lisinopril": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 14,
+      "egfr": 59
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 55 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ],
+        "Lisinopril": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 14,
+      "egfr": 55
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 35 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ],
+        "Lisinopril": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 14,
+      "egfr": 35
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 30 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ],
+        "Lisinopril": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 14,
+      "egfr": 30
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 29 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ],
+        "Lisinopril": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 14,
+      "egfr": 29
+    },
+    {
+      "refined_query": "Medications: Metformin, Lisinopril | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 25 mL/min/1.73m2 | Demographics: Sex: Male, Weight: 80kg, Age: 55",
+      "medications": [
+        "Metformin",
+        "Lisinopril"
+      ],
+      "section_map": {
+        "Metformin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ],
+        "Lisinopril": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 14,
+      "egfr": 25
+    }
+  ],
+  "medication_impact_analysis": [
+    {
+      "refined_query": "Medications: Metformin | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 59 mL/min/1.73m2, Creatinine: 1.6 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 65",
+      "medications": [
+        "Metformin"
+      ],
+      "section_map": {
+        "Metformin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 6,
+      "medication_set": [
+        "Metformin"
+      ]
+    },
+    {
+      "refined_query": "Medications: Amlodipine | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 59 mL/min/1.73m2, Creatinine: 1.6 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 65",
+      "medications": [
+        "Amlodipine"
+      ],
+      "section_map": {
+        "Amlodipine": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 6,
+      "medication_set": [
+        "Amlodipine"
+      ]
+    },
+    {
+      "refined_query": "Medications: Simvastatin | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 59 mL/min/1.73m2, Creatinine: 1.6 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 65",
+      "medications": [
+        "Simvastatin"
+      ],
+      "section_map": {
+        "Simvastatin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 6,
+      "medication_set": [
+        "Simvastatin"
+      ]
+    },
+    {
+      "refined_query": "Medications: Metformin, Amlodipine | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 59 mL/min/1.73m2, Creatinine: 1.6 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 65",
+      "medications": [
+        "Metformin",
+        "Amlodipine"
+      ],
+      "section_map": {
+        "Metformin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ],
+        "Amlodipine": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "interactions",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "interactions",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 14,
+      "medication_set": [
+        "Metformin",
+        "Amlodipine"
+      ]
+    },
+    {
+      "refined_query": "Medications: Warfarin | Conditions: Type 2 Diabetes, Hypertension | Labs: eGFR: 59 mL/min/1.73m2, Creatinine: 1.6 mg/dL | Demographics: Sex: Male, Weight: 75kg, Age: 65",
+      "medications": [
+        "Warfarin"
+      ],
+      "section_map": {
+        "Warfarin": [
+          "metabolism",
+          "names",
+          "indications",
+          "dosage",
+          "pharmacology",
+          "toxicity"
+        ]
+      },
+      "unique_sections": [
+        "dosage",
+        "indications",
+        "metabolism",
+        "names",
+        "pharmacology",
+        "toxicity"
+      ],
+      "total_sections": 6,
+      "medication_set": [
+        "Warfarin"
+      ]
+    }
+  ]
+}

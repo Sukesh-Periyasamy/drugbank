@@ -6,21 +6,25 @@ def refine_drugbank_query(patient_data):
     """Extract relevant patient details for DrugBank queries using local rule-based approach"""
     query_parts = []
     
-    # Extract medications
+    # Extract medications (flexible field names)
     medications = []
-    if "medications" in patient_data:
-        for med in patient_data["medications"]:
-            if isinstance(med, dict) and "drugName" in med:
-                medications.append(med["drugName"])
+    med_data = patient_data.get("medications", patient_data.get("current_medications", []))
+    if med_data:
+        for med in med_data:
+            if isinstance(med, dict):
+                # Try both drugName and drug_name
+                drug_name = med.get("drugName", med.get("drug_name", ""))
+                if drug_name:
+                    medications.append(drug_name)
             elif isinstance(med, str):
                 medications.append(med)
     
     if medications:
         query_parts.append(f"Medications: {', '.join(medications)}")
     
-    # Extract conditions
-    if "conditions" in patient_data:
-        conditions = patient_data["conditions"]
+    # Extract conditions (flexible field names)
+    conditions = patient_data.get("conditions", patient_data.get("clinical_conditions", []))
+    if conditions:
         if isinstance(conditions, list):
             query_parts.append(f"Conditions: {', '.join(conditions)}")
         elif isinstance(conditions, str):
@@ -34,9 +38,9 @@ def refine_drugbank_query(patient_data):
         elif isinstance(allergies, str) and allergies.strip():
             query_parts.append(f"Allergies: {allergies}")
     
-    # Extract relevant labs
-    if "labs" in patient_data:
-        labs = patient_data["labs"]
+    # Extract relevant labs (flexible field names)
+    labs = patient_data.get("labs", patient_data.get("lab_results", {}))
+    if labs:
         relevant_labs = []
         for lab, value in labs.items():
             if lab.lower() in ['creatinine', 'serum_creatinine', 'egfr', 'lft', 'hba1c', 'liver', 'hb', 'calcium', 'vitamin_d']:

@@ -1,0 +1,498 @@
+{
+  "timestamp": "2025-10-09T05:49:20.886024",
+  "schema_file": "patient_schema.json",
+  "validation_tests": [
+    {
+      "test_name": "Valid Complete Patient",
+      "patient_id": "SCHEMA_001",
+      "expect_valid": true,
+      "is_valid": true,
+      "validation_errors": [],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [],
+        "optional_fields_present": [
+          "weight_kg",
+          "height_cm",
+          "clinical_conditions",
+          "allergies",
+          "lab_results"
+        ],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Minimal Valid Patient",
+      "patient_id": "SCHEMA_002",
+      "expect_valid": true,
+      "is_valid": true,
+      "validation_errors": [],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [],
+        "optional_fields_present": [],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Missing Required Field",
+      "patient_id": "SCHEMA_003",
+      "expect_valid": false,
+      "is_valid": false,
+      "validation_errors": [
+        {
+          "message": "'age' is a required property",
+          "path": [],
+          "failed_value": "{'patient_id': 'SCHEMA_003', 'name': 'Missing Age Patient', 'sex': 'Male', 'current_medications': [{'drug_name': 'Aspirin'}]}",
+          "schema_path": [
+            "required"
+          ]
+        }
+      ],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [
+          "age"
+        ],
+        "optional_fields_present": [],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Wrong Data Types",
+      "patient_id": "SCHEMA_004",
+      "expect_valid": false,
+      "is_valid": false,
+      "validation_errors": [
+        {
+          "message": "'seventy-five' is not of type 'number'",
+          "path": [
+            "weight_kg"
+          ],
+          "failed_value": "seventy-five",
+          "schema_path": [
+            "properties",
+            "weight_kg",
+            "type"
+          ]
+        },
+        {
+          "message": "'seventy-five' is not of type 'number'",
+          "path": [
+            "weight_kg"
+          ],
+          "failed_value": "seventy-five",
+          "schema_path": [
+            "properties",
+            "weight_kg",
+            "type"
+          ]
+        },
+        {
+          "message": "'Aspirin, Lisinopril' is not of type 'array'",
+          "path": [
+            "current_medications"
+          ],
+          "failed_value": "Aspirin, Lisinopril",
+          "schema_path": [
+            "properties",
+            "current_medications",
+            "type"
+          ]
+        }
+      ],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [],
+        "optional_fields_present": [
+          "weight_kg"
+        ],
+        "unexpected_fields": [],
+        "data_type_issues": [
+          {
+            "field": "age",
+            "expected_type": "integer",
+            "actual_type": "str",
+            "value": "forty-five"
+          },
+          {
+            "field": "weight_kg",
+            "expected_type": "number",
+            "actual_type": "str",
+            "value": "seventy-five"
+          },
+          {
+            "field": "current_medications",
+            "expected_type": "array",
+            "actual_type": "str",
+            "value": "Aspirin, Lisinopril"
+          }
+        ],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Constraint Violations",
+      "patient_id": "",
+      "expect_valid": false,
+      "is_valid": false,
+      "validation_errors": [
+        {
+          "message": "-5 is less than the minimum of 0.1",
+          "path": [
+            "weight_kg"
+          ],
+          "failed_value": "-5",
+          "schema_path": [
+            "properties",
+            "weight_kg",
+            "minimum"
+          ]
+        },
+        {
+          "message": "'' should be non-empty",
+          "path": [
+            "patient_id"
+          ],
+          "failed_value": "",
+          "schema_path": [
+            "properties",
+            "patient_id",
+            "minLength"
+          ]
+        },
+        {
+          "message": "'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' is too long",
+          "path": [
+            "name"
+          ],
+          "failed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "schema_path": [
+            "properties",
+            "name",
+            "maxLength"
+          ]
+        },
+        {
+          "message": "200 is greater than the maximum of 150",
+          "path": [
+            "age"
+          ],
+          "failed_value": "200",
+          "schema_path": [
+            "properties",
+            "age",
+            "maximum"
+          ]
+        },
+        {
+          "message": "'InvalidSex' is not one of ['Male', 'Female', 'Other', 'Unknown']",
+          "path": [
+            "sex"
+          ],
+          "failed_value": "InvalidSex",
+          "schema_path": [
+            "properties",
+            "sex",
+            "enum"
+          ]
+        },
+        {
+          "message": "-5 is less than the minimum of 0.1",
+          "path": [
+            "weight_kg"
+          ],
+          "failed_value": "-5",
+          "schema_path": [
+            "properties",
+            "weight_kg",
+            "minimum"
+          ]
+        },
+        {
+          "message": "'' should be non-empty",
+          "path": [
+            "current_medications",
+            0,
+            "drug_name"
+          ],
+          "failed_value": "",
+          "schema_path": [
+            "properties",
+            "current_medications",
+            "items",
+            "properties",
+            "drug_name",
+            "minLength"
+          ]
+        },
+        {
+          "message": "'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' is too long",
+          "path": [
+            "current_medications",
+            0,
+            "dose"
+          ],
+          "failed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "schema_path": [
+            "properties",
+            "current_medications",
+            "items",
+            "properties",
+            "dose",
+            "maxLength"
+          ]
+        }
+      ],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [],
+        "optional_fields_present": [
+          "weight_kg"
+        ],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Invalid Lab Formats",
+      "patient_id": "SCHEMA_006",
+      "expect_valid": false,
+      "is_valid": false,
+      "validation_errors": [
+        {
+          "message": "'85' does not match '^[0-9]+\\\\.?[0-9]*\\\\s*(mL/min/1\\\\.73m2|mL/min/1\\\\.73m²|ml/min)$'",
+          "path": [
+            "lab_results",
+            "eGFR"
+          ],
+          "failed_value": "85",
+          "schema_path": [
+            "properties",
+            "lab_results",
+            "properties",
+            "eGFR",
+            "pattern"
+          ]
+        },
+        {
+          "message": "'85' does not match '^[0-9]+\\\\.?[0-9]*\\\\s*(mL/min/1\\\\.73m2|mL/min/1\\\\.73m²|ml/min)$'",
+          "path": [
+            "lab_results",
+            "eGFR"
+          ],
+          "failed_value": "85",
+          "schema_path": [
+            "properties",
+            "lab_results",
+            "properties",
+            "eGFR",
+            "pattern"
+          ]
+        },
+        {
+          "message": "'6.8 invalid' does not match '^[0-9]+\\\\.?[0-9]*\\\\s*(%|mmol/mol)$'",
+          "path": [
+            "lab_results",
+            "HbA1c"
+          ],
+          "failed_value": "6.8 invalid",
+          "schema_path": [
+            "properties",
+            "lab_results",
+            "properties",
+            "HbA1c",
+            "pattern"
+          ]
+        }
+      ],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [],
+        "optional_fields_present": [
+          "lab_results"
+        ],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Alternative Field Names",
+      "patient_id": "SCHEMA_007",
+      "expect_valid": false,
+      "is_valid": false,
+      "validation_errors": [
+        {
+          "message": "'current_medications' is a required property",
+          "path": [],
+          "failed_value": "{'patient_id': 'SCHEMA_007', 'name': 'Alternative Fields Patient', 'age': 35, 'sex': 'Male', 'medications': ['Aspirin', 'Lisinopril'], 'conditions': ['Hypertension'], 'allergic_to': ['Sulfa'], 'labs':",
+          "schema_path": [
+            "required"
+          ]
+        }
+      ],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex"
+        ],
+        "required_fields_missing": [
+          "current_medications"
+        ],
+        "optional_fields_present": [
+          "medications",
+          "conditions",
+          "allergic_to",
+          "labs"
+        ],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Extra Fields Allowed",
+      "patient_id": "SCHEMA_008",
+      "expect_valid": true,
+      "is_valid": true,
+      "validation_errors": [],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [],
+        "optional_fields_present": [],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Complex Nested Structure",
+      "patient_id": "SCHEMA_009",
+      "expect_valid": true,
+      "is_valid": true,
+      "validation_errors": [],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [],
+        "optional_fields_present": [
+          "vital_signs"
+        ],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    },
+    {
+      "test_name": "Edge Case Values",
+      "patient_id": "SCHEMA_010",
+      "expect_valid": true,
+      "is_valid": true,
+      "validation_errors": [],
+      "schema_violations": [],
+      "field_analysis": {
+        "required_fields_present": [
+          "patient_id",
+          "name",
+          "age",
+          "sex",
+          "current_medications"
+        ],
+        "required_fields_missing": [],
+        "optional_fields_present": [
+          "weight_kg",
+          "height_cm",
+          "clinical_conditions",
+          "allergies"
+        ],
+        "unexpected_fields": [],
+        "data_type_issues": [],
+        "constraint_violations": []
+      },
+      "test_passed": true
+    }
+  ],
+  "tests_passed": 10,
+  "tests_failed": 0,
+  "summary": {
+    "total_tests": 10,
+    "tests_passed": 10,
+    "tests_failed": 0,
+    "success_rate": 100.0,
+    "schema_compliance": "Excellent"
+  }
+}

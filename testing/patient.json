@@ -1,0 +1,13 @@
+{
+  "patient_id": "FUZZ_RAND_5",
+  "current_medications": [
+    {
+      "drug_name": "TestDrug",
+      "dose": "10mg"
+    }
+  ],
+  "clinical_conditions": [
+    "TestCondition"
+  ],
+  "u{\\xPZP50U{z.d.dAL": "7[^MODe;)md?G0uu5y[BYqqW0u"
+}
