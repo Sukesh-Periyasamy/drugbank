@@ -9,6 +9,9 @@ __pycache__/
 .venv/
 venv/
 
+# Environment variables
+.env
+
 # Output files
 
 # OS
